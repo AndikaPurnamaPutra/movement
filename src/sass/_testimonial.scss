@@ -1,0 +1,44 @@
+.testimonial {
+    padding-block: 100px;
+    &-wrapper {
+        gap: 70px;
+
+        .icon-testimonial {
+            max-width: 120px;
+            width: 100%;
+        }
+    }
+
+    &-text {
+        max-width: 990px;
+        gap: 64px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            max-width: 550px;
+            width: 100%;
+
+            .since {
+                font-size: $p3-lg;
+                margin-bottom: 10px;
+                span {
+                    display: inline-block;
+                    border: 1px solid $secondary-color;
+                    width: 48px;
+                    height: 1px;
+                    vertical-align: middle;
+                    margin-right: 12px;
+                }
+            }
+
+            .desc-text {
+                span {
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

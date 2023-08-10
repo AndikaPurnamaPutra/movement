@@ -1,0 +1,32 @@
+.statistic {
+    padding-block: 100px;
+    &-wrapper {
+        .items {
+            padding-inline: 60px;
+
+            &:nth-child(1) {
+                text-align: start;
+            }
+            &:nth-child(2) {
+                text-align: center;
+            }
+            &:nth-child(3) {
+                text-align: end;
+            }
+            .heading-text {
+                font-size: $h1-lg;
+                font-family: $font-graphik;
+                font-weight: 400;
+                margin-bottom: 16px;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            .desc-text {
+                font-size: $p3-lg;
+            }
+        }
+    }
+}
