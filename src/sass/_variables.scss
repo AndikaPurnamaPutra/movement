@@ -46,11 +46,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "MAZIUS REVIEW 20.09 Regular";
+    src: url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.eot");
+    src: url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/7e5d4b5e37c0623759cbed868eb8c2ba.svg#MAZIUS REVIEW 20.09 Regular")
+            format("svg");
+}
+
 $font-graphik: "Graphik LCG";
+$font-mazius: "MAZIUS REVIEW 20.09 Regular";
 $primary-color: #ffc100;
 $secondary-color: #152632;
 $white-color: #ffffff;
-$h1-lg: 90px;
+$h1-lg: 96px;
 $h2-lg: 64px;
 $p1-lg: 32px;
 $p2-lg: 24px;

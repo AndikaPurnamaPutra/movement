@@ -17,6 +17,7 @@
 
                 &-img {
                     .img-review {
+                        max-width: 64px;
                         &:not(:last-child) {
                             margin-right: -24px;
                         }
@@ -66,14 +67,105 @@
                     opacity: 0;
                     transition: all 300ms ease;
                 }
-            }
-
-            &:hover {
-                cursor: pointer;
-                .item-wrap {
+                &:hover {
+                    cursor: pointer;
                     .ic-hover {
                         bottom: 48px;
                         opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-top,
+        &-bottom {
+            .item {
+                gap: 60px;
+
+                .img-choose {
+                    max-width: 320px;
+                }
+                &-wrap {
+                    .ic-hover {
+                        max-width: 68px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-wrapper {
+            gap: 40px;
+        }
+        &-top {
+            .heading-content {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        &-bottom {
+            gap: 40px;
+
+            .item {
+                flex-direction: column;
+                gap: 32px;
+                align-items: flex-start;
+
+                &:nth-child(even) {
+                    flex-direction: column;
+                }
+
+                .img-choose {
+                    max-width: unset;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-wrapper {
+            gap: 20px;
+        }
+
+        &-top {
+            .heading-content {
+                gap: 16px;
+                .heading-lg-text {
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        &-bottom {
+            .item {
+                gap: 20px;
+
+                &-wrap {
+                    position: relative;
+                    .heading-text {
+                        margin-bottom: 12px;
+                    }
+                    .ic-hover {
+                        position: absolute;
+                        bottom: 0;
+                        right: 38px;
+                        max-width: 42px;
+                        opacity: 0;
+                        transition: all 300ms ease;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        .ic-hover {
+                            bottom: 88px;
+                            opacity: 1;
+                        }
                     }
                 }
             }

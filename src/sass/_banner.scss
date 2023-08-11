@@ -1,0 +1,48 @@
+.banner {
+    background-color: $primary-color;
+    padding-block: 60px;
+    .slider {
+        overflow-x: hidden;
+        .slide {
+            gap: 60px;
+            margin-inline: 30px;
+
+            .icon-banner {
+                max-width: 120px;
+                width: 100%;
+            }
+            &-text {
+                font-size: 188px;
+                font-family: $font-graphik;
+                font-weight: 400;
+                flex-shrink: 0;
+
+                &-white {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .slider {
+            .slide {
+                &-text {
+                    font-size: 158px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .slider {
+            gap: 30px;
+            // margin-inline: 15px;
+            .slide {
+                &-text {
+                    font-size: 108px;
+                }
+            }
+        }
+    }
+}

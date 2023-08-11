@@ -1,0 +1,180 @@
+.project {
+    padding-block: 100px;
+    &-top {
+        .heading-content {
+            .sub-heading-text {
+                padding-block: 20px;
+            }
+            .heading-lg-text {
+                max-width: 900px;
+            }
+        }
+        .arrow-wrap {
+            padding-right: 180px;
+            gap: 16px;
+            margin-top: 48px;
+            .btn-arrow {
+                padding: 20px;
+                display: flex;
+                border: 1px solid $secondary-color;
+                border-radius: 50%;
+                flex-shrink: 0;
+                transition: all 300ms ease;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    transform: scale(1.3);
+                    svg {
+                        path {
+                            stroke: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        margin-top: -50px;
+        .slider-project {
+            .slide {
+                max-width: 550px;
+                .img-slide {
+                    transition: all 300ms ease;
+                    width: 100%;
+                    height: 330px;
+
+                    &-active {
+                        height: 542px;
+                    }
+                }
+
+                &-text {
+                    margin-top: 32px;
+
+                    .desc-text {
+                        margin-bottom: 16px;
+                    }
+
+                    .btn-link {
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+                        text-decoration: none;
+                        font-size: 24px;
+                        color: $secondary-color;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-top {
+            .heading-content {
+                .heading-lg-text {
+                    max-width: 682px;
+                }
+            }
+
+            .arrow-wrap {
+                .btn-arrow {
+                    padding: 16px;
+                }
+            }
+        }
+
+        &-bottom {
+            margin-top: -28px;
+            .slider-project {
+                gap: 60px;
+
+                .slide {
+                    &-text {
+                        .btn-link {
+                            font-size: 20px;
+                            gap: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-top {
+            .heading-content {
+                flex-direction: column;
+
+                .sub-heading-text {
+                    padding: unset;
+                }
+                .heading-lg-text {
+                    margin-top: 16px;
+                    max-width: unset;
+                }
+            }
+        }
+
+        &-bottom {
+            .slider-project {
+                .slide {
+                    &-text {
+                        margin-top: 24px;
+                    }
+                    .img-slide {
+                        max-height: 230px;
+                        &-active {
+                            max-height: 442px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-top {
+            .heading-content {
+                .heading-lg-text {
+                    margin-top: 12px;
+                }
+            }
+            .arrow-wrap {
+                padding-right: unset;
+                justify-content: space-between;
+                margin-top: 20px;
+                .btn-arrow {
+                    padding: 12px;
+                }
+            }
+        }
+
+        &-bottom {
+            margin-top: unset;
+
+            .slider-project {
+                flex-direction: column;
+                gap: 20px;
+
+                .slide {
+                    &-text {
+                        margin-top: 24px;
+                    }
+                    .img-slide {
+                        max-height: 172px;
+                        &-active {
+                            max-height: 362px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
