@@ -1,0 +1,69 @@
+.footer {
+    .container {
+        &-footer {
+            padding-block: 80px;
+            justify-content: space-between;
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &:nth-child(even) {
+                    align-items: flex-end;
+                }
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    &-display {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 32px;
+                        font-weight: 500;
+                        line-height: 150%; /* 48px */
+                        margin-bottom: 40px;
+                    }
+                    &-subtext {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 32px;
+                        font-weight: 400;
+                        line-height: 150%; /* 48px */
+                        letter-spacing: -1.28px;
+                    }
+                    &-desc {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+                        letter-spacing: -0.8px;
+                    }
+                }
+                &-menus-socialmedia {
+                    display: flex;
+                    gap: 80px;
+                    .nav-link {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+                        letter-spacing: -0.8px;
+                        cursor: pointer;
+                        transition: all 300ms ease;
+                    }
+                }
+                &-mark {
+                    &-text {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+                        letter-spacing: -0.8px;
+                    }
+                }
+            }
+        }
+    }
+}

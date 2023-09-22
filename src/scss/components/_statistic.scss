@@ -1,0 +1,41 @@
+.section-statistic {
+    .container {
+        &-statistic {
+            padding-block: 100px;
+            .subtext {
+                display: inline-flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 40px;
+                &-text {
+                    padding-inline: 60px;
+                    &:nth-child(1) {
+                        text-align: start;
+                    }
+                    &:nth-child(2) {
+                        text-align: center;
+                    }
+                    &:nth-child(3) {
+                        text-align: end;
+                    }
+                    &-display {
+                        color: $secondary;
+                        font-family: $font-body;
+                        font-size: 96px;
+                        font-weight: 400;
+                        line-height: 110%; /* 105.6px */
+                        letter-spacing: -7.68px;
+                    }
+                    &-desc {
+                        color: $light-black;
+                        font-family: $font-body;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 150%; /* 30px */
+                        letter-spacing: -0.8px;
+                    }
+                }
+            }
+        }
+    }
+}

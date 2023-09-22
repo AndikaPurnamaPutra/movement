@@ -3,10 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/assets/images/Logo.svg" />
-        <title>Movement</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- <link rel="icon" href="./assets/images/Logo.svg" /> -->
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Spectral:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <!-- slick -->
         <!-- Add the slick-theme.css if you want default styling -->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -18,40 +24,41 @@
         />
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <title>Movement Interior Designer</title>
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-inner d-flex justify-content-between align-items-center">
-                    <a href="#" class="nav-link nav-link-dekstop">SERVICES</a>
-                    <a href="#" class="navbar-brand">Movement<span>.</span></a>
-                    <a href="#" class="navbar-toggler">
-                        <span class="navbar-toggler-icon"></span>
-                    </a>
-                    <div class="navbar-collapse">
-                        <div class="navbar-nav">
-                            <a href="#" class="nav-link nav-link-mobile">SERVICES</a>
-                            <a href="#" class="nav-link">CONTACT US</a>
+        <!-- navbar -->
+        <nav id="navbar" class="navbar bg-dark">
+            <div class="container-fluid container-fluid-nav">
+                <div class="nav">
+                    <div class="nav-menu nav-menu-dekstop">
+                        <div class="nav-menu-item item">
+                            <a href="#" class="item-link item-link-dekstop">SERVICES</a>
+                        </div>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#"> Movement<span class="text-primary">.</span> </a>
+                    </div>
+                    <button class="nav-btn-responsive"></button>
+                    <div class="nav-menu">
+                        <div class="nav-menu-item item">
+                            <a href="#" class="item-link item-link-mobile">SERVICES</a>
+                            <a href="#" class="item-link">CONTACT US</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-wrapper">
-                    <div class="hero-top d-flex justify-content-between">
-                        <div
-                            class="hero-top-list heading-list"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
+        <!-- end navbar -->
+
+        <!-- section header -->
+        <section class="section-header bg-dark">
+            <div class="container container-header">
+                <div class="head-content">
+                    <div class="subtext grid-7">
+                        <div class="subtext-list">
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -67,10 +74,12 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="item-text">ARCHITECTURE</div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">ARCHITECTURE</h5>
+                                </div>
                             </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -86,10 +95,12 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="item-text">DESIGN</div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">DESIGN</h5>
+                                </div>
                             </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -105,10 +116,12 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="item-text">CONCEPT</div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">CONCEPT</h5>
+                                </div>
                             </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -124,652 +137,552 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="item-text">PLANNING</div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">PLANNING</h5>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="hero-top-text d-flex"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <div>
-                                <img src="assets/images/ic-text-hero.png" alt="ic-text-hero" class="ic ic-text-hero" />
-                            </div>
-                            <p class="desc-text">
+                        <div class="subtext-text">
+                            <img src="assets/image/header-span-image-2.svg" alt="" class="img text-image" />
+                            <p class="subtext-text-desc">
                                 Scelerisque viverra mauris in aliquam sem fringilla. Amet porttitor eget dolor morbi
                                 proin fermentum.
                             </p>
                         </div>
-                        <div class="hero-top-img d-flex align-items-start">
-                            <img src="assets/images/ic-decoration-hero.svg" alt="" class="img img-decoration" />
-                            <img src="assets/images/img-hero.png" alt="img-hero" class="img img-hero" />
+                    </div>
+                    <div class="subtext grid-5">
+                        <div class="subtext-image">
+                            <img src="assets/image/header-image.png" alt="" class="img" />
                         </div>
                     </div>
-                    <div class="hero-bottom">
-                        <h1
-                            class="heading-lg-text"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <span>Creative</span>
-                            <img src="assets/images/ic-arrow-hero.svg" alt="ic-arrow-hero" class="ic ic-arrow" />
-                        </h1>
-                        <h1
-                            class="heading-lg-text"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            Interior Designer
-                        </h1>
+                </div>
+                <div class="body-content">
+                    <div class="subtext">
+                        <div class="subtext-text">
+                            <h1 class="subtext-text-display">
+                                <span class="text-primary">Creative</span
+                                ><span><img src="assets/image/header-span-image.svg" alt="" /></span>
+                            </h1>
+                        </div>
+                        <div class="subtext-text">
+                            <h1 class="subtext-text-display">Interior Designer</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About -->
-        <section class="about">
-            <div class="container">
-                <div class="about-wrapper d-flex justify-content-between align-items-end">
-                    <div class="heading-content d-flex align-items-center">
-                        <img
-                            src="assets/images/img-about.png"
-                            alt="img-about"
-                            class="img img-about"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        />
-                        <div class="text-wrap">
-                            <h4
-                                class="sub-heading-text"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                ABOUT MOVEMENT
-                            </h4>
-                            <h2
-                                class="heading-text"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                Everything you need to decorate your room
-                            </h2>
-                        </div>
-                    </div>
-                    <p
-                        class="desc-text"
-                        data-aos="fade-up"
-                        data-aos-delay="600"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                    >
-                        <span>MOVEMENT</span> is a creative agency specialized in interior architecture & styling to
-                        create beautiful spaces.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <!-- end section header -->
 
-        <!-- project -->
-        <section class="project">
-            <div class="container">
-                <div class="project-wrapper">
-                    <div class="project-top">
-                        <div class="heading-content d-flex justify-content-between">
-                            <h4
-                                class="sub-heading-text"
-                                data-aos="fade-up"
-                                data-aos-delay="300"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                OUR LATEST PROJECT
-                            </h4>
-                            <h2
-                                class="heading-lg-text"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                Make your own spaces the most comfortable
-                            </h2>
-                        </div>
-                        <div
-                            class="arrow-wrap d-flex justify-content-end"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <a href="#" class="btn btn-arrow btn-arrow-previous">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M7.5 19.5L4.5 15.75L1.5 12M1.5 12H22.5M1.5 12L4.5 8.25L7.5 4.5"
-                                        stroke="#152632"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </a>
-                            <a href="#" class="btn btn-arrow btn-arrow-next">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M16.5 4.5L19.5 8.25L22.5 12M22.5 12L1.5 12M22.5 12L19.5 15.75L16.5 19.5"
-                                        stroke="#152632"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-bottom">
-                        <div
-                            class="slider-project d-flex align-items-end justify-content-between"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <div>
-                                <div class="slide">
-                                    <img
-                                        src="assets/images/img-project.png"
-                                        alt=""
-                                        class="img img-slide img-slide-active"
-                                    />
-                                    <div class="slide-text">
-                                        <p class="desc-text">
-                                            Modern kitchen and bar for apartment to look stylish and luxurious.
-                                        </p>
-                                        <a href="#" class="btn btn-link"
-                                            >See more<img
-                                                src="assets/images/ic-arrow-project.svg"
-                                                alt=""
-                                                class="ic icon-arrow"
-                                        /></a>
-                                    </div>
-                                </div>
+        <!-- section about -->
+        <section class="section-about bg-light-yellow">
+            <div class="container container-about">
+                <div class="head-content">
+                    <div class="subtext">
+                        <div class="subtext-text wrapper">
+                            <div class="subtext-text-image">
+                                <img src="assets/image/about-image.png" alt="" class="img" />
                             </div>
-                            <div>
-                                <div class="slide">
-                                    <img src="assets/images/img-project.png" alt="" class="img img-slide" />
-                                    <div class="slide-text">
-                                        <p class="desc-text">
-                                            Modern kitchen and bar for apartment to look stylish and luxurious.
-                                        </p>
-                                        <a href="#" class="btn btn-link"
-                                            >See more<img
-                                                src="assets/images/ic-arrow-project.svg"
-                                                alt=""
-                                                class="ic icon-arrow"
-                                        /></a>
-                                    </div>
-                                </div>
+                            <div class="subtext-text subtext-text-title">
+                                <span class="subtext-text-span">ABOUT MOVEMENT</span>
+                                <h3 class="subtext-text-display">Everything you need to decorate your room</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statistic -->
-        <section class="statistic">
-            <div class="container">
-                <div class="statistic-wrapper d-flex justify-content-between">
-                    <div
-                        class="items"
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                    >
-                        <h4 class="heading-text">3700<span>+</span></h4>
-                        <p class="desc-text">Complete Project</p>
-                    </div>
-                    <div
-                        class="items"
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                    >
-                        <h4 class="heading-text">450K<span>+</span></h4>
-                        <p class="desc-text">Happy Customer</p>
-                    </div>
-                    <div
-                        class="items"
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                    >
-                        <h4 class="heading-text">297<span>+</span></h4>
-                        <p class="desc-text">Loyal Employee</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work -->
-        <section class="work">
-            <div class="container">
-                <div class="work-wrapper">
-                    <div class="work-left d-flex flex-column justify-content-between">
-                        <div class="heading-content">
-                            <h4
-                                class="sub-heading-text"
-                                data-aos="fade-up"
-                                data-aos-delay="300"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                HOW WE WORK
-                            </h4>
-                            <h2
-                                class="heading-lg-text"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                We create stylish interior design for
-                                <img src="assets/images/ic-heading-work.svg" alt="ic-heading-work" /> your spaces
-                            </h2>
-                        </div>
-                        <div
-                            class="heading-list"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">ARCHITECTURE</div>
-                            </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">DESIGN</div>
-                            </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">CONCEPT</div>
-                            </div>
-                            <div class="item item-hover">
-                                <div class="ic icon-arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">PLANNING</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-right">
-                        <img
-                            src="assets/images/video-work.png"
-                            alt="video-work"
-                            class="img img-work"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        />
-                        <p
-                            class="desc-text"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            Collaborate and create something that is unique with our cutting edge tools, skilled
-                            interior designer and special materials.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonial -->
-        <section class="testimonial">
-            <div class="container">
-                <div class="testimonial-wrapper d-flex justify-content-end align-items-start">
-                    <img
-                        src="assets/images/ic-heading-testimonial.svg"
-                        alt="ic-heading-testimonial"
-                        class="ic icon-testimonial"
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                    />
-                    <div class="testimonial-text d-flex flex-column">
-                        <h2
-                            class="heading-text"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            The essence of interior design will always be about how people live. It’s about the
-                            realities of what makes for an attractive and meaningful.
-                        </h2>
-                        <div
-                            class="item"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <img
-                                src="assets/images/img-testimonial.png"
-                                alt="img-testimonial"
-                                class="img-testimonial"
-                            />
-                            <p class="desc-text">
-                                MOVEMENT is a creative agency specialized in interior architecture & styling to create
-                                beautiful spaces.
+                        <div class="subtext-text grid-4">
+                            <p class="subtext-text-desc">
+                                <span>MOVEMENT</span> is a creative agency specialized in interior architecture &
+                                styling to create beautiful spaces.
                             </p>
                         </div>
-                        <div
-                            class="item"
-                            data-aos="fade-up"
-                            data-aos-delay="600"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <img
-                                src="assets/images/img-testimonial.png"
-                                alt="img-testimonial"
-                                class="img-testimonial"
-                            />
-                            <div class="item-wrap">
-                                <p class="since"><span></span>Since 2001</p>
-                                <p class="desc-text">
-                                    <span>ARCHITECTURE</span> / DESIGN / STYLING / PLANNING / CONCEPT / BUILD
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end section about -->
 
-        <!-- choose -->
-        <section class="choose">
-            <div class="container">
-                <div class="choose-wrapper d-flex flex-column">
-                    <div class="choose-top">
-                        <h4
-                            class="sub-heading-text"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            WHY CHOOSE US
-                        </h4>
-                        <div class="heading-content d-flex align-items-center justify-content-between">
-                            <h2
-                                class="heading-lg-text"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
+        <!-- section project -->
+        <section class="section-project">
+            <div class="container container-project">
+                <div class="head-content">
+                    <div class="subtext">
+                        <div class="subtext-text grid-3">
+                            <span class="subtext-text-span">OUR LATEST PROJECT</span>
+                        </div>
+                        <div class="subtext-text grid-9">
+                            <h2 class="subtext-text-display">Make your own spaces the most comfortable</h2>
+                        </div>
+                    </div>
+                    <div class="wrapper-btn">
+                        <button class="btn btn-arrow btn-arrow-previous">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
                             >
-                                We provide the best design for your own
-                            </h2>
-                            <div
-                                class="review d-flex flex-column align-items-start"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
+                                <path
+                                    d="M7.5 19.5L4.5 15.75L1.5 12M1.5 12H22.5M1.5 12L4.5 8.25L7.5 4.5"
+                                    stroke="#152632"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <button class="btn btn-arrow btn-arrow-next">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
                             >
-                                <div class="review-img">
-                                    <img src="assets/images/img-review-choose.png" alt="" class="img img-review" />
-                                    <img src="assets/images/img-review-choose.png" alt="" class="img img-review" />
-                                    <img src="assets/images/img-review-choose.png" alt="" class="img img-review" />
+                                <path
+                                    d="M16.5 4.5L19.5 8.25L22.5 12M22.5 12L1.5 12M22.5 12L19.5 15.75L16.5 19.5"
+                                    stroke="#152632"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="subtext-card slider-card-project">
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
+                                    </button>
                                 </div>
-                                <p
-                                    class="desc-text"
-                                    data-aos="fade-up"
-                                    data-aos-delay="600"
-                                    data-aos-duration="1000"
-                                    data-aos-once="true"
-                                >
-                                    <span>Reviews</span> from our client is very important for us. We listen all your
-                                    feedbacks!
-                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="choose-bottom d-flex flex-column">
-                        <div
-                            class="item"
-                            data-aos="fade-up"
-                            data-aos-delay="700"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <img src="assets/images/img-choose.png" alt="images" class="img img-choose" />
-                            <div class="item-wrap">
-                                <h4 class="heading-text">Creative and unique custom design</h4>
-                                <p class="desc-text">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                                <img
-                                    src="assets/images/ic-arrow-choose.svg"
-                                    alt="ic-arrow-choose"
-                                    class="ic ic-hover"
-                                />
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="item"
-                            data-aos="fade-up"
-                            data-aos-delay="800"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <img src="assets/images/img-choose.png" alt="images" class="img img-choose" />
-                            <div class="item-wrap">
-                                <h4 class="heading-text">Creative and unique custom design</h4>
-                                <p class="desc-text">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                                <img
-                                    src="assets/images/ic-arrow-choose.svg"
-                                    alt="ic-arrow-choose"
-                                    class="ic ic-hover"
-                                />
+                        <!--  -->
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="item"
-                            data-aos="fade-up"
-                            data-aos-delay="900"
-                            data-aos-duration="1000"
-                            data-aos-once="true"
-                        >
-                            <img src="assets/images/img-choose.png" alt="images" class="img img-choose" />
-                            <div class="item-wrap">
-                                <h4 class="heading-text">Creative and unique custom design</h4>
-                                <p class="desc-text">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                                <img
-                                    src="assets/images/ic-arrow-choose.svg"
-                                    alt="ic-arrow-choose"
-                                    class="ic ic-hover"
-                                />
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        Modern kitchen and bar for apartment to look stylish and luxurious.
+                                    </p>
+                                    <button class="btn btn-link">
+                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end section project -->
 
-        <!-- Banner -->
-        <section class="banner">
-            <div class="slider">
-                <div>
-                    <div class="slide d-flex align-items-center">
-                        <img src="assets/images/ic-arrow-banner.svg" alt="ic-arrow-banner" class="ic icon-banner" />
-                        <h4 class="slide-text">Get In <span>Touch</span></h4>
-                        <h4 class="slide-text slide-text-white">Get In <span>Touch</span></h4>
+        <!-- section statistic -->
+        <section class="section-statistic">
+            <div class="container container-statistic">
+                <div class="subtext">
+                    <div class="subtext-text">
+                        <h2 class="subtext-display">
+                            <span class="counter">3700</span><span class="text-primary">+</span>
+                        </h2>
+                        <p class="subtext-text-desc">Complete Project</p>
                     </div>
-                </div>
-                <div>
-                    <div class="slide d-flex align-items-center">
-                        <img src="assets/images/ic-arrow-banner.svg" alt="ic-arrow-banner" class="ic icon-banner" />
-                        <h4 class="slide-text">Get In <span>Touch</span></h4>
-                        <h4 class="slide-text slide-text-white">Get In <span>Touch</span></h4>
+                    <div class="subtext-text">
+                        <h2 class="subtext-display">
+                            <span class="counter">450</span>K<span class="text-primary">+</span>
+                        </h2>
+                        <p class="subtext-text-desc">Happy Customer</p>
                     </div>
-                </div>
-                <div>
-                    <div class="slide d-flex align-items-center">
-                        <img src="assets/images/ic-arrow-banner.svg" alt="ic-arrow-banner" class="ic icon-banner" />
-                        <h4 class="slide-text">Get In <span>Touch</span></h4>
-                        <h4 class="slide-text slide-text-white">Get In <span>Touch</span></h4>
-                    </div>
-                </div>
-                <div>
-                    <div class="slide d-flex align-items-center">
-                        <img src="assets/images/ic-arrow-banner.svg" alt="ic-arrow-banner" class="ic icon-banner" />
-                        <h4 class="slide-text">Get In <span>Touch</span></h4>
-                        <h4 class="slide-text slide-text-white">Get In <span>Touch</span></h4>
-                    </div>
-                </div>
-                <div>
-                    <div class="slide d-flex align-items-center">
-                        <img src="assets/images/ic-arrow-banner.svg" alt="ic-arrow-banner" class="ic icon-banner" />
-                        <h4 class="slide-text">Get In <span>Touch</span></h4>
-                        <h4 class="slide-text slide-text-white">Get In <span>Touch</span></h4>
+                    <div class="subtext-text">
+                        <h2 class="subtext-display">
+                            <span class="counter">297</span><span class="text-primary">+</span>
+                        </h2>
+                        <p class="subtext-text-desc">Loyal Employee</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end section statistic -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-wrapper d-flex justify-content-between">
-                    <div class="footer-left">
-                        <a href="#" class="footer-brand">Movement<span>.</span></a>
-                        <div class="company d-flex flex-column">
-                            <a href="#" class="email">Info@movement.com</a>
-                            <a href="#" class="address">3891 Ranchview Dr. Richardson, California 62639</a>
+        <!-- section work -->
+        <section class="section-work bg-dark">
+            <div class="container container-work">
+                <div class="head-content grid-6">
+                    <div class="subtext">
+                        <div class="subtext-text">
+                            <span class="subtext-text-span">HOW WE WORK</span>
+                            <h2 class="subtext-text-display">
+                                We create stylish interior design for
+                                <span><img src="assets/image/work-span-image.svg" alt="" class="img" /></span> your
+                                spaces
+                            </h2>
+                        </div>
+                        <div class="subtext-list">
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">ARCHITECTURE</h5>
+                                </div>
+                            </div>
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">DESIGN</h5>
+                                </div>
+                            </div>
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">CONCEPT</h5>
+                                </div>
+                            </div>
+                            <div class="subtext-list-item item">
+                                <div class="item-image">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
+                                            stroke="white"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <h5 class="item-text-desc">PLANNING</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer-right d-flex flex-column justify-content-between">
-                        <div class="social-media d-flex">
-                            <a href="#" class="btn-link">Instagram</a>
-                            <a href="#" class="btn-link">Twitter</a>
-                            <a href="#" class="btn-link">Tiktok</a>
-                            <a href="#" class="btn-link">Youtube</a>
+                </div>
+                <div class="body-content grid-6">
+                    <div class="subtext-card">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/image/work-card-image.png" alt="" class="img image-item" />
+                                <img src="assets/image/Play.svg" alt="" class="img image-play-btn" />
+                            </div>
+                            <p class="card-text-desc">
+                                Collaborate and create something that is unique with our cutting edge tools, skilled
+                                interior designer and special materials.
+                            </p>
                         </div>
-                        <span class="copyright">© 2022 Movement. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section work -->
+
+        <!-- section testimonial -->
+        <section class="section-testimonial">
+            <div class="container container-testimonial">
+                <div class="head-content grid-3">
+                    <div class="subtext-image">
+                        <img src="assets/image/testimonial-image.svg" alt="" class="img" />
+                    </div>
+                </div>
+                <div class="body-content grid-9">
+                    <div class="subtext">
+                        <div class="subtext-text">
+                            <h3 class="subtext-text-display">
+                                The essence of interior design will always be about how people live. It’s about the
+                                realities of what makes for an attractive and meaningful.
+                            </h3>
+                        </div>
+                        <div class="subtext-card">
+                            <div class="card">
+                                <img src="assets/image/testimonial-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <p class="card-body-desc">
+                                        <span>MOVEMENT</span> is a creative agency specialized in interior architecture
+                                        & styling to create beautiful spaces.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="assets/image/testimonial-card-image.png" alt="" class="img card-image" />
+                                <div class="card-body">
+                                    <span class="card-body-span">
+                                        <div class="line"></div>
+                                        Since 2001
+                                    </span>
+                                    <p class="card-body-display">
+                                        <span class="text-primary">ARCHITECTURE</span> / DESIGN / STYLING / PLANNING /
+                                        CONCEPT / BUILD
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section testimonial -->
+
+        <!-- section choose -->
+        <section class="section-choose">
+            <div class="container container-choose">
+                <div class="head-content">
+                    <div class="subtext">
+                        <div class="subtext-text grid-9">
+                            <span class="subtext-text-span">WHY CHOOSE US</span>
+                            <h2 class="subtext-text-display">We provide the best design for your own</h2>
+                        </div>
+                        <div class="subtext-text grid-3">
+                            <div class="subtext-text-profile">
+                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
+                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
+                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
+                            </div>
+                            <p class="subtext-text-desc">
+                                <span>Reviews</span> from our client is very important for us. We listen all your
+                                feedbacks!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="subtext-item">
+                        <div class="item">
+                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
+                            <div class="item-text">
+                                <h3 class="item-text-display">Creative and unique custom design</h3>
+                                <p class="item-text-desc">
+                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
+                                    mi tempus imperdiet.
+                                </p>
+                            </div>
+                            <button class="btn btn-icon">
+                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
+                            <div class="item-text">
+                                <h3 class="item-text-display">Special materials for make good interior</h3>
+                                <p class="item-text-desc">
+                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
+                                    mi tempus imperdiet.
+                                </p>
+                            </div>
+                            <button class="btn btn-icon btn-icon-reverse">
+                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
+                            </button>
+                        </div>
+                        <div class="item">
+                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
+                            <div class="item-text">
+                                <h3 class="item-text-display">Friendly prices with 24/7 services</h3>
+                                <p class="item-text-desc">
+                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
+                                    mi tempus imperdiet.
+                                </p>
+                            </div>
+                            <button class="btn btn-icon">
+                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section choose -->
+
+        <!-- section touch -->
+        <section class="section-touch bg-light-yellow">
+            <div class="container-fluid container-fluid-touch">
+                <div class="slider-touch">
+                    <div>
+                        <div class="item">
+                            <img src="assets/image/touch-slider-image.svg" alt="" class="img item-image" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item">
+                            <h1 class="item-text-display">Get In <span>Touch</span></h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item">
+                            <h1 class="item-text-display text-white">Get In <span>Touch</span></h1>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <div class="item">
+                            <img src="assets/image/touch-slider-image.svg" alt="" class="img item-image" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item">
+                            <h1 class="item-text-display">Get In <span>Touch</span></h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item">
+                            <h1 class="item-text-display text-white">Get In <span>Touch</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section touch -->
+
+        <!-- footer -->
+        <footer class="footer bg-dark">
+            <div class="container container-footer">
+                <div class="content">
+                    <div class="content-text">
+                        <h4 class="content-text-display">Movement<span class="text-primary">.</span></h4>
+                    </div>
+                    <div class="content-text">
+                        <a href="#" class="content-text-subtext">Info@movement.com</a>
+                        <a href="#" class="content-text-desc">3891 Ranchview Dr. Richardson, California 62639</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-menus-socialmedia">
+                        <a href="#" class="nav-link">Instagram</a>
+                        <a href="#" class="nav-link">Twitter</a>
+                        <a href="#" class="nav-link">Tiktok</a>
+                        <a href="#" class="nav-link">Youtube</a>
+                    </div>
+                    <div class="content-mark">
+                        <p class="content-mark-text">© 2022 Movement. All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </footer>
+        <!-- end footer -->
 
+        <!-- Swiper -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
         <!-- Slick -->
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
+        <!-- CounterUp -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+            integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./assets/js/main.js"></script>
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-
-        <script src="/assets/js/script.js"></script>
     </body>
 </html>

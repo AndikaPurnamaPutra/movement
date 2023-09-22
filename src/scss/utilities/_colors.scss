@@ -1,0 +1,15 @@
+$primary: #FFC100;
+$secondary: #152632;
+
+$white: #ffffff;
+$light-white: rgba(255, 255, 255, 0.60);
+$light-black: rgba(21, 38, 50, 0.60);
+
+// $subText: #94a0c0;
+
+.text-primary {
+    color: $primary;
+}
+.text-secondary {
+    color: $secondary;
+}
