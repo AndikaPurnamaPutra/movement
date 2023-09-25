@@ -1,0 +1,78 @@
+.section-banner {
+    background-color: $dark-gray;
+    .subtext {
+        width: 100%;
+        display: inline-flex;
+        padding: 100px 103px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+
+        @include respondsive(md) {
+            padding: 50px 53px;
+        }
+        @include respondsive(sm) {
+            padding: 50px 0;
+        }
+        &-text {
+            &-display {
+                color: #fdfdfd;
+                font-family: $font-body;
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 120%; /* 90px */
+
+                @include respondsive(xl) {
+                    font-size: 64px;
+                }
+                @include respondsive(md) {
+                    font-size: 48px;
+                }
+                @include respondsive(sm) {
+                    font-size: 32px;
+                }
+            }
+        }
+        &-input {
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid $white;
+            padding-bottom: 20px;
+
+            @include respondsive(sm) {
+                border-bottom: unset;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            input {
+                width: inherit;
+                border: none;
+                background-color: transparent;
+                color: $white;
+                font-family: $font-body;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 160%; /* 32px */
+                padding-block: 11px;
+                &:focus {
+                    outline: none;
+                }
+
+                @include respondsive(sm) {
+                    border-bottom: 1px solid $white;
+                }
+            }
+            .btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                @include respondsive(sm) {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

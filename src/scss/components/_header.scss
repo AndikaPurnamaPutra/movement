@@ -1,189 +1,105 @@
 .section-header {
     .container {
         &-header {
-            padding-block: 100px;
+            padding-block: 120px;
+            position: relative;
+
+            @include respondsive(xl) {
+                padding-block: 60px;
+            }
+            @include respondsive(sm) {
+                padding-block: 40px;
+            }
+        }
+    }
+    .subtext {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 120px;
+
+        @include respondsive(xl) {
+            gap: 60px;
+        }
+        @include respondsive(sm) {
+            gap: 40px;
+        }
+        &-text {
+            display: flex;
             flex-direction: column;
-            @include responsive(md) {
-                flex-direction: column-reverse;
-                gap: 42px;
-                padding-block: 50px;
+            align-items: center;
+            gap: 36px;
+            &-span {
+                font-family: Eudoxus Sans;
+                color: $primary;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 160%;
+                text-transform: uppercase;
+                display: inline-flex;
+                padding: 12px 24px;
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.12);
             }
-            .head-content {
-                display: flex;
-                gap: 67px;
-                @include responsive(xl) {
-                    gap: 42px;
+            &-display {
+                font-family: Eudoxus Sans;
+                color: $white;
+                text-align: center;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+            }
+
+            @include respondsive(xl) {
+                gap: 28px;
+                &-display {
+                    font-size: 64px;
                 }
-                @include responsive(md) {
-                    flex-direction: column;
-                }
-                .subtext {
-                    display: flex;
-                    align-items: center;
-                    gap: 97px;
-                    @include responsive(xl) {
-                        gap: 42px;
-                    }
-                    @include responsive(sm) {
-                        // gap: 42px;
-                        flex-direction: column;
-                        align-items: flex-start;
-                    }
-                    &.grid-7 {
-                        @include responsive(xl) {
-                            width: 90%;
-                        }
-                        @include responsive(md) {
-                            width: 100%;
-                        }
-                    }
-                    &.grid-5 {
-                        @include responsive(md) {
-                            width: 100%;
-                        }
-                    }
-                    &-list {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 24px;
-                        &-item {
-                            display: flex;
-                            align-items: center;
-                            gap: 32px;
-                            cursor: pointer;
-                            .item {
-                                &-image {
-                                    display: inline-flex;
-                                    padding: 8px;
-                                    outline: 0.5px solid $white;
-                                    border-radius: 50%;
-                                    transition: all 300ms ease;
-                                }
-                                &-text {
-                                    &-desc {
-                                        color: $white;
-                                        font-family: $font-body;
-                                        font-size: $h5;
-                                        font-weight: 500;
-                                        line-height: 150%; /* 36px */
-                                        transition: all 300ms ease;
-                                        @include responsive(md) {
-                                            font-size: 22px;
-                                        }
-                                    }
-                                }
-                            }
-                            &:hover {
-                                .item-image {
-                                    transform: rotate(-45deg);
-                                    outline: 0.5px solid $primary;
-                                    svg path {
-                                        stroke: $primary;
-                                    }
-                                }
-                                .item-text-desc {
-                                    color: $primary;
-                                }
-                            }
-                        }
-                    }
-                    &-text {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 37px;
-                        @include responsive(xl) {
-                            gap: 24px;
-                        }
-                        img {
-                            max-width: 27px;
-                            @include responsive(xl) {
-                                max-width: 24px;
-                            }
-                        }
-                        &-desc {
-                            color: $light-white;
-                            font-family: $font-display;
-                            font-size: 27px;
-                            font-weight: 400;
-                            line-height: 140%; /* 37.8px */
-                            letter-spacing: 0.54px;
-                            @include responsive(xl) {
-                                font-size: 24px;
-                            }
-                            @include responsive(xl) {
-                                font-size: 22px;
-                            }
-                        }
-                    }
-                    &-image {
-                        @include responsive(md) {
-                            img {
-                                width: 80%;
-                            }
-                        }
-                        @include responsive(sm) {
-                            img {
-                                width: 90%;
-                            }
-                        }
-                    }
+                &-desc {
+                    font-size: 16px;
+                    text-align: center;
                 }
             }
-            .body-content {
-                .subtext {
-                    margin-top: -80px;
-                    @include responsive(xl) {
-                        margin-top: 0;
+            @include respondsive(md) {
+                &-display {
+                    font-size: 52px;
+                }
+            }
+            @include respondsive(sm) {
+                gap: 16px;
+                &-span {
+                    font-size: 12px;
+                }
+                &-display {
+                    font-size: 36px;
+                }
+            }
+        }
+        &-decoration {
+            &.decoration {
+                &-left {
+                    position: absolute;
+                    top: 190px;
+                    left: -381px;
+                    z-index: -1;
+                    max-width: 701.39px;
+                }
+                &-right {
+                    position: absolute;
+                    top: 413px;
+                    right: -162px;
+                    z-index: -1;
+                    max-width: 388.33px;
+                }
+
+                @include respondsive(md) {
+                    &-left {
+                        display: none;
                     }
-                    &-text {
-                        &-display {
-                            color: $white;
-                            font-family: $font-body;
-                            font-size: 188px;
-                            font-weight: 400;
-                            line-height: 110%; /* 206.8px */
-                            letter-spacing: -15.04px;
-                            display: inline-flex;
-                            align-items: center;
-                            gap: 58px;
-                            span {
-                                img {
-                                    max-width: 120px;
-                                }
-                            }
-                            @include responsive(xl) {
-                                font-size: 148px;
-                                span {
-                                    img {
-                                        max-width: 112px;
-                                    }
-                                }
-                            }
-                            @include responsive(md) {
-                                font-size: 116px;
-                                letter-spacing: -12.04px;
-                                span {
-                                    img {
-                                        max-width: 86px;
-                                    }
-                                }
-                            }
-                            @include responsive(sm) {
-                                font-size: 72px;
-                                letter-spacing: -5px;
-                                gap: 24px;
-                                span {
-                                    img {
-                                        max-width: 58px;
-                                    }
-                                }
-                            }
-                        }
-                        .text-primary {
-                            font-family: $font-display;
-                            font-style: italic;
-                        }
+                    &-right {
+                        display: none;
                     }
                 }
             }

@@ -1,0 +1,53 @@
+.partner {
+    &-logos {
+        .single-logo {
+            img {
+                cursor: pointer;
+                height: 100%;
+                background-color: $dark-charcoal-grey;
+                padding: 0 34px;
+                border-radius: 52px;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-logos {
+            .single-logo {
+                img {
+                    &:not(:last-child) {
+                        margin-right: 30px !important;
+                    }
+                    height: 112px;
+                    background-color: $dark-charcoal-grey;
+                    padding: 0 28px;
+                    border-radius: 42px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-logos {
+            .single-logo {
+                img {
+                    height: 84px;
+                    background-color: $dark-charcoal-grey;
+                    padding: 0 24px;
+                    border-radius: 32px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .single-logo {
+            img {
+                height: 48px;
+                background-color: $dark-charcoal-grey;
+                padding: 0 8px;
+                border-radius: 18px;
+            }
+        }
+    }
+}

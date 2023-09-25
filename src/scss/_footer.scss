@@ -1,0 +1,53 @@
+.footer {
+    padding-block: 40px;
+    .wrapper {
+        gap: 56px;
+    }
+    &-top {
+        .img-logo {
+            max-width: 96px;
+            width: 100%;
+        }
+    }
+
+    &-bottom {
+        gap: 100px;
+        .nav-link {
+            font-size: $p3-lg;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-bottom {
+            gap: 72px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-top {
+            max-width: 72px;
+        }
+
+        &-bottom {
+            gap: 34px;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .wrapper {
+            gap: 24px;
+        }
+        &-top {
+            max-width: 62px;
+        }
+
+        &-bottom {
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

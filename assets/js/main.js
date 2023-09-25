@@ -1,27 +1,25 @@
 console.log("hallo");
 
-// Navbar Responsive
-
+// Navbar Mobile
 const navbarToggler = document.querySelector(".nav-btn-responsive");
 
 navbarToggler.addEventListener("click", function () {
-    document.querySelector(".nav-menu-responsive").classList.toggle("active");
+    document.querySelector(".nav-menu").classList.toggle("active");
 });
 
 // logic respondsive
 
-// const btnRes = document.querySelector(".nav-btn-responsive");
-// const menu = document.querySelector(".nav-menu");
+// const btnRes = document.querySelector('.nav-btn-respondsive');
+// const menu = document.querySelector('.nav-menu');
 
-// btnRes.addEventListener("click", () => {
-//     menu.classList.toggle("active");
-//     btnRes.classList.toggle("cross");
+// btnRes.addEventListener('click', () => {
+//   menu.classList.toggle('active');
+//   btnRes.classList.toggle('cross');
 // });
 
 // slick
-
 $(document).ready(function () {
-    $(".slider-touch").slick({
+    $(".slider-partner").slick({
         variableWidth: true,
         autoplay: true,
         centerMode: true,
@@ -30,44 +28,30 @@ $(document).ready(function () {
         cssEase: "linear",
         speed: 5000,
     });
-    $(".slider-card-project").slick({
-        infinite: true,
-        speed: 300,
-        centerMode: false,
-        slidesToShow: 1,
-        arrows: false,
+
+    $(".slider-control").slick({
         variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 768, // Ketika lebar layar mencapai 768px
-                settings: {
-                    variableWidth: false, // Matikan variableWidth
-                    slidesToShow: 1, // Tampilkan 1 slide
-                },
-            },
-        ],
+        autoplay: true,
+        centerMode: true,
+        arrows: false,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        speed: 5000,
     });
 });
 
-// Mengatur navigasi prev dan next menggunakan button
-$(".btn-arrow-previous").click(function () {
-    $(".slider-card-project").slick("slickPrev");
-});
-
-$(".btn-arrow-next").click(function () {
-    $(".slider-card-project").slick("slickNext");
-});
-
-// counterup
-
-jQuery(document).ready(function ($) {
-    $(".counter").counterUp({
-        delay: 10,
-        time: 1000,
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".btn-arrow",
+        },
+        loop: true,
     });
 });
-$(".counter").addClass("animated fadeInDownBig");
-$(".subtext-text-desc").addClass("animated fadeIn");
 
 // logic copy clipboard
 

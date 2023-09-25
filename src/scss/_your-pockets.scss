@@ -1,0 +1,151 @@
+.your-pockets {
+    padding-block: 120px;
+    .your-pockets-top {
+        margin-bottom: 80px;
+    }
+
+    .your-pockets-bottom {
+        background-color: $dark-charcoal-grey;
+        border-radius: 80px;
+        padding: 80px 48px;
+        gap: 40px;
+        overflow-x: scroll;
+        vertical-align: middle;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            padding: 48px 44px;
+            text-align: center;
+            background-color: #6b6b6f;
+            flex-shrink: 0;
+            border-radius: 52px;
+            transition: all 300ms ease;
+            cursor: pointer;
+
+            .category {
+                display: block;
+                padding: 20px 57px;
+                border-radius: 52px;
+                background-color: $secondary-color;
+                font-family: $eudoxus_sansbold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-bottom: 56px;
+            }
+
+            .card-body {
+                .card-title {
+                    font-size: $h5-lg;
+                    font-family: $eudoxus_sansbold;
+                    color: $primary-color;
+                    margin-bottom: 12px;
+                    transition: all 300ms ease;
+                }
+
+                .card-text {
+                    font-size: $p3-lg;
+                    color: $primary-color;
+                    font-family: $eudoxus_sansregular;
+                    transition: all 300ms ease;
+                }
+            }
+
+            &:hover {
+                background-color: $primary-color;
+
+                .card-body {
+                    .card-title,
+                    .card-text {
+                        color: $black-color;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        padding-block: 90px;
+        .your-pockets-top {
+            .heading-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        .your-pockets-bottom {
+            border-radius: 52px;
+
+            .card {
+                .category {
+                    padding: 18px 54px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-block: 60px;
+
+        .your-pockets-top {
+            margin-bottom: 60px;
+            .heading-content {
+                .heading-text {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .your-pockets-bottom {
+            border-radius: 42px;
+            gap: 24px;
+
+            .card {
+                padding: 44px 40px;
+                .category {
+                    padding: 16px 48px;
+                }
+
+                .card-body {
+                    .card-title {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-block: 40px;
+
+        .your-pockets-top {
+            margin-bottom: 40px;
+            .heading-content {
+                .heading-text {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        .your-pockets-bottom {
+            border-radius: 32px;
+            padding: 40px 28px;
+            gap: 24px;
+
+            .card {
+                padding: 34px 30px;
+                .category {
+                    padding: 16px 48px;
+                }
+
+                .card-body {
+                    .card-title {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

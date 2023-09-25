@@ -1,0 +1,159 @@
+.section-pocket {
+    .subtext {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-block: 120px;
+        gap: 80px;
+
+        @include respondsive(xl) {
+            padding-block: 60px !important;
+        }
+        @include respondsive(md) {
+            gap: 40px;
+        }
+        @include respondsive(sm) {
+            padding-block: 40px !important;
+        }
+        &-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 36px;
+
+            @include respondsive(md) {
+                gap: 28px;
+            }
+            &-span {
+                font-family: Eudoxus Sans;
+                color: $primary;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 160%;
+                text-transform: uppercase;
+                display: inline-flex;
+                padding: 12px 24px;
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.12);
+            }
+            &-display {
+                color: $white;
+                font-family: $font-body;
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 120%; /* 90px */
+                max-width: 688px;
+
+                @include respondsive(xl) {
+                    font-size: 64px;
+                }
+                @include respondsive(md) {
+                    font-size: 48px;
+                }
+                @include respondsive(sm) {
+                    font-size: 32px;
+                }
+            }
+            &-desc {
+                color: $white;
+                font-family: $font-body;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                max-width: 380px;
+            }
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                @include respondsive(md) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                }
+            }
+        }
+        &-card {
+            display: flex;
+            padding: 80px 48px;
+            align-items: flex-start;
+            gap: 30px;
+            border-radius: 80px;
+            background-color: $dark-gray;
+            width: 100%;
+            overflow-x: auto;
+            flex-shrink: 0;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @include respondsive(sm) {
+                padding: 40px 28px;
+            }
+            .card {
+                display: flex;
+                padding: 48px 41px;
+                flex-direction: column;
+                align-items: center;
+                gap: 56px;
+                border-radius: 52px;
+                background: $light-gray;
+                transition: all 300ms ease;
+                cursor: pointer;
+                &-text {
+                    &-label {
+                        padding: 20px 57px;
+                        border-radius: 52px;
+                        background: #b3dd62;
+                        color: $dark-gray;
+                        text-align: center;
+                        font-family: $font-body;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 160%; /* 22.4px */
+                    }
+                    &-display {
+                        color: $white;
+                        text-align: center;
+                        font-family: $font-body;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 120%; /* 38.4px */
+                        transition: all 300ms ease;
+                    }
+                    &-desc {
+                        color: $white;
+                        text-align: center;
+                        font-family: $font-body;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 160%; /* 25.6px */
+                        transition: all 300ms ease;
+                    }
+                }
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+                    .card-text {
+                        &-display {
+                            color: $dark-gray;
+                        }
+                        &-desc {
+                            color: $dark-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
