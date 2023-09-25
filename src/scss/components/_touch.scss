@@ -1,32 +1,55 @@
 .section-touch {
-    .container-fluid {
-        &-touch {
-            padding-block: 80px !important;
-            .slider-touch {
-                .slick-track {
-                    display: inline-flex;
-                    align-items: center;
+    .slider-touch {
+        padding-block: 80px;
+        @include responsive(md) {
+            padding-block: 40px;
+        }
+        .slick-track {
+            display: inline-flex;
+            align-items: center;
+        }
+        .item {
+            margin-inline: 30px;
+            @include responsive(md) {
+                margin-inline: 15px;
+            }
+            &-image {
+                max-width: 120px;
+                @include responsive(xl) {
+                    max-width: 100px;
                 }
-                .item {
-                    margin-inline: 30px;
-                    &-image {
-                        max-width: 120px;
-                    }
-                    &-text-display {
-                        color: $secondary;
-                        font-family: $font-body;
-                        font-size: 188px;
-                        font-weight: 400;
-                        line-height: 110%; /* 206.8px */
-                        letter-spacing: -15.04px;
-                        span {
-                            font-family: $font-display;
-                            font-style: italic;
-                        }
-                        &.text-white {
-                            color: $white;
-                        }
-                    }
+                @include responsive(md) {
+                    max-width: 80px;
+                }
+                @include responsive(md) {
+                    max-width: 60px;
+                }
+            }
+            &-text-display {
+                color: $secondary;
+                font-family: $font-body;
+                font-size: 188px;
+                font-weight: 400;
+                line-height: 110%; /* 206.8px */
+                letter-spacing: -15.04px;
+                @include responsive(xl) {
+                    font-size: 148px;
+                    letter-spacing: -10.04px;
+                }
+                @include responsive(md) {
+                    font-size: 108px;
+                    letter-spacing: -5.04px;
+                }
+                @include responsive(sm) {
+                    font-size: 78px;
+                    letter-spacing: -5.04px;
+                }
+                span {
+                    font-family: $font-display;
+                    font-style: italic;
+                }
+                &.text-white {
+                    color: $white;
                 }
             }
         }

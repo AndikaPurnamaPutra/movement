@@ -2,11 +2,32 @@
     .container {
         &-about {
             padding-block: 80px;
+            @include responsive(md) {
+                padding-block: 40px;
+            }
             .head-content {
                 .subtext {
                     display: flex;
                     align-items: flex-end;
+                    @include responsive(md) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 32px;
+                    }
+                    @include responsive(sm) {
+                        gap: 16px;
+                    }
                     &-text {
+                        @include responsive(md) {
+                            &.grid-4 {
+                                width: 75%;
+                            }
+                        }
+                        @include responsive(sm) {
+                            &.grid-4 {
+                                width: 100%;
+                            }
+                        }
                         &-title {
                             display: flex;
                             flex-direction: column;
@@ -14,6 +35,9 @@
                         }
                         &-image {
                             max-width: 180px;
+                            @include responsive(sm) {
+                                max-width: 100%;
+                            }
                         }
                         &-span {
                             color: $secondary;
@@ -22,6 +46,9 @@
                             font-weight: 300;
                             line-height: 150%; /* 36px */
                             text-transform: uppercase;
+                            @include responsive(xl) {
+                                font-size: 20px;
+                            }
                         }
                         &-display {
                             color: $secondary;
@@ -30,6 +57,14 @@
                             font-weight: 400;
                             line-height: 110%; /* 70.4px */
                             letter-spacing: -5.12px;
+                            @include responsive(xl) {
+                                font-size: 54px;
+                                letter-spacing: -4.12px;
+                            }
+                            @include responsive(sm) {
+                                font-size: 34px;
+                                letter-spacing: -2.12px;
+                            }
                         }
                         &-desc {
                             color: rgba(21, 38, 50, 0.8);
@@ -38,6 +73,15 @@
                             font-weight: 400;
                             line-height: 150%; /* 30px */
                             letter-spacing: -0.8px;
+                            @include responsive(xl) {
+                                font-size: 16px;
+                            }
+                            @include responsive(md) {
+                                font-size: 20px;
+                            }
+                            @include responsive(sm) {
+                                font-size: 16px;
+                            }
 
                             span {
                                 font-family: $font-display;
@@ -49,6 +93,11 @@
                         display: flex;
                         align-items: center;
                         gap: 40px;
+                        @include responsive(sm) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 32px;
+                        }
                     }
                 }
             }

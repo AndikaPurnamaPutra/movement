@@ -3,6 +3,14 @@
         &-work {
             gap: 40px;
             padding-block: 100px;
+            @include responsive(md) {
+                padding-block: 50px;
+            }
+            .grid-6 {
+                @include responsive(md) {
+                    width: 100%;
+                }
+            }
             .head-content {
                 .subtext {
                     display: flex;
@@ -10,6 +18,9 @@
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: flex-start;
+                    @include responsive(md) {
+                        gap: 42px;
+                    }
                     &-text {
                         display: flex;
                         flex-direction: column;
@@ -22,6 +33,9 @@
                             font-weight: 300;
                             line-height: 150%; /* 36px */
                             text-transform: uppercase;
+                            @include responsive(xl) {
+                                font-size: 20px;
+                            }
                         }
                         &-display {
                             color: $white;
@@ -34,6 +48,25 @@
                                 img {
                                     max-width: 120px;
                                     margin-bottom: -5%;
+                                }
+                            }
+                            @include responsive(xl) {
+                                font-size: 72px;
+                                span {
+                                    img {
+                                        max-width: 65px;
+                                        margin-bottom: -3%;
+                                    }
+                                }
+                            }
+                            @include responsive(sm) {
+                                font-size: 48px;
+                                letter-spacing: -2.12px;
+                                span {
+                                    img {
+                                        max-width: 38px;
+                                        margin-bottom: -1%;
+                                    }
                                 }
                             }
                         }
@@ -57,12 +90,17 @@
                                     transition: all 300ms ease;
                                 }
                                 &-text {
-                                    color: $white;
-                                    font-family: $font-body;
-                                    font-size: $h5;
-                                    font-weight: 500;
-                                    line-height: 150%; /* 36px */
-                                    transition: all 300ms ease;
+                                    &-desc {
+                                        color: $white;
+                                        font-family: $font-body;
+                                        font-size: $h5;
+                                        font-weight: 500;
+                                        line-height: 150%; /* 36px */
+                                        transition: all 300ms ease;
+                                        @include responsive(md) {
+                                            font-size: 22px;
+                                        }
+                                    }
                                 }
                             }
                             &:hover {
@@ -73,7 +111,7 @@
                                         stroke: $primary;
                                     }
                                 }
-                                .item-text {
+                                .item-text-desc {
                                     color: $primary;
                                 }
                             }
@@ -84,20 +122,30 @@
             .body-content {
                 .subtext-card {
                     .card {
+                        max-width: 620px;
+                        @include responsive(md) {
+                            max-width: 85%;
+                        }
+                        @include responsive(sm) {
+                            max-width: 100%;
+                        }
                         &-image {
                             display: inline-flex;
                             position: relative;
                             margin-bottom: 32px;
+                            @include responsive(md) {
+                                margin-bottom: 16px;
+                            }
                             .image {
-                                &-item {
-                                    max-width: 620px;
-                                }
                                 &-play-btn {
                                     position: absolute;
                                     top: 50%;
                                     left: 50%;
                                     transform: translate(-50%, -50%);
                                     max-width: 100px;
+                                    @include responsive(xl) {
+                                        max-width: 75px;
+                                    }
                                 }
                             }
                         }
@@ -108,6 +156,12 @@
                             font-weight: 400;
                             line-height: 150%; /* 48px */
                             letter-spacing: -1.28px;
+                            @include responsive(xl) {
+                                font-size: 26px;
+                            }
+                            @include responsive(xl) {
+                                font-size: 22px;
+                            }
                         }
                     }
                 }

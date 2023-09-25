@@ -5,7 +5,7 @@ console.log("hallo");
 const navbarToggler = document.querySelector(".nav-btn-responsive");
 
 navbarToggler.addEventListener("click", function () {
-    document.querySelector(".nav-menu").classList.toggle("active");
+    document.querySelector(".nav-menu-responsive").classList.toggle("active");
 });
 
 // logic respondsive
@@ -33,19 +33,29 @@ $(document).ready(function () {
     $(".slider-card-project").slick({
         infinite: true,
         speed: 300,
+        centerMode: false,
         slidesToShow: 1,
         arrows: false,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768, // Ketika lebar layar mencapai 768px
+                settings: {
+                    variableWidth: false, // Matikan variableWidth
+                    slidesToShow: 1, // Tampilkan 1 slide
+                },
+            },
+        ],
     });
 });
 
 // Mengatur navigasi prev dan next menggunakan button
-$('.btn-arrow-previous').click(function(){
-    $('.slider-card-project').slick('slickPrev');
+$(".btn-arrow-previous").click(function () {
+    $(".slider-card-project").slick("slickPrev");
 });
 
-$('.btn-arrow-next').click(function(){
-    $('.slider-card-project').slick('slickNext');
+$(".btn-arrow-next").click(function () {
+    $(".slider-card-project").slick("slickNext");
 });
 
 // counterup

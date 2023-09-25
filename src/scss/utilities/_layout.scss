@@ -11,7 +11,7 @@ $grid-columns: 12;
 // .grid-12 for 100%
 [class^="grid-"] {
     @include responsive(md) {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
@@ -31,24 +31,6 @@ section {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    // .container {
-    //     max-width: 1440px;
-    //     width: 100%;
-    //     padding: 0 80px;
-    //     display: flex;
-    //     flex-direction: row;
-    //     margin: auto;
-    //     &-fluid {
-    //         padding: unset !important;
-    //     }
-    //     // @include respondsive(xl) {
-    //     //     padding: 0 40px;
-    //     // }
-    //     @include responsive(md) {
-    //         padding: 0 20px;
-    //         flex-direction: column;
-    //     }
-    // }
 }
 
 .container {
@@ -60,6 +42,9 @@ section {
     margin: auto;
     &-fluid {
         padding: unset !important;
+    }
+    @include responsive(xl) {
+        padding: 0 40px;
     }
     @include responsive(md) {
         padding: 0 20px;

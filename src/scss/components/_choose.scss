@@ -4,11 +4,27 @@
             padding-block: 100px;
             flex-direction: column;
             gap: 80px;
+            @include responsive(md) {
+                gap: 40px;
+                padding-block: 50px;
+            }
             .head-content {
                 .subtext {
                     display: flex;
                     align-items: center;
                     gap: 70px;
+                    @include responsive(xl) {
+                        gap: 0;
+                    }
+                    @include responsive(md) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 32px;
+                        .grid-9,
+                        .grid-3 {
+                            width: 100%;
+                        }
+                    }
                     &-text {
                         display: flex;
                         flex-direction: column;
@@ -21,6 +37,9 @@
                             font-weight: 300;
                             line-height: 150%; /* 36px */
                             text-transform: uppercase;
+                            @include responsive(xl) {
+                                font-size: 20px;
+                            }
                         }
                         &-display {
                             color: $secondary;
@@ -29,13 +48,28 @@
                             font-weight: 400;
                             line-height: 110%; /* 70.4px */
                             letter-spacing: -5.12px;
+                            @include responsive(xl) {
+                                font-size: 72px;
+                            }
+                            @include responsive(sm) {
+                                font-size: 48px;
+                            }
                         }
                         &-profile {
                             img {
                                 &:not(:first-child) {
                                     margin-left: -24px;
+                                    @include responsive(sm) {
+                                        margin-left: -18px;
+                                    }
                                 }
                                 max-width: 64px;
+                                @include responsive(xl) {
+                                    max-width: 52px;
+                                }
+                                @include responsive(sm) {
+                                    max-width: 42px;
+                                }
                             }
                         }
                         &-desc {
@@ -59,16 +93,34 @@
                     display: inline-flex;
                     flex-direction: column;
                     gap: 80px;
+                    @include responsive(md) {
+                        gap: 40px;
+                    }
                     .item {
                         display: flex;
                         align-items: center;
                         gap: 110px;
                         position: relative;
+                        cursor: pointer;
+                        @include responsive(xl) {
+                            gap: 50px;
+                        }
+                        @include responsive(md) {
+                            flex-direction: column !important;
+                            align-items: flex-start;
+                            gap: 24px;
+                        }
                         &:nth-child(even) {
                             flex-direction: row-reverse;
                         }
                         &-image {
                             max-width: 620px;
+                            @include responsive(xl) {
+                                max-width: 480px;
+                            }
+                            @include responsive(md) {
+                                max-width: 100%;
+                            }
                         }
                         &-text {
                             display: flex;
@@ -81,6 +133,13 @@
                                 font-weight: 400;
                                 line-height: 110%; /* 70.4px */
                                 letter-spacing: -5.12px;
+                                @include responsive(xl) {
+                                    font-size: 54px;
+                                }
+                                @include responsive(md) {
+                                    font-size: 34px;
+                                    letter-spacing: -3.12px;
+                                }
                             }
                             &-desc {
                                 color: $light-black;
@@ -99,15 +158,32 @@
                             &-reverse {
                                 right: unset;
                                 left: 260px;
+                                @include responsive(md) {
+                                    left: 75px;
+                                }
+                            }
+
+                            @include responsive(md) {
+                                right: unset;
+                                left: 75px;
                             }
                             img {
                                 max-width: 120px;
+                                @include responsive(xl) {
+                                    max-width: 85px;
+                                }
+                                @include responsive(sm) {
+                                    max-width: 55px;
+                                }
                             }
                         }
                         &:hover {
                             .btn-icon {
                                 bottom: 115px;
                                 opacity: 1;
+                                @include responsive(sm) {
+                                    bottom: 85px;
+                                }
                             }
                         }
                     }

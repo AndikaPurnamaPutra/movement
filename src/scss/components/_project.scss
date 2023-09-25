@@ -3,10 +3,26 @@
         &-project {
             padding-block: 100px;
             flex-direction: column;
+            @include responsive(md) {
+                padding-block: 50px;
+            }
             .head-content {
                 .subtext {
                     display: flex;
                     gap: 136px;
+                    @include responsive(xl) {
+                        gap: 116px;
+                    }
+                    @include responsive(md) {
+                        flex-direction: column;
+                        gap: 16px;
+                        .grid-3 {
+                            width: 100%;
+                        }
+                        .grid-9 {
+                            width: 100%;
+                        }
+                    }
                     &-text {
                         &-span {
                             color: $secondary;
@@ -17,6 +33,12 @@
                             text-transform: uppercase;
                             display: inline-flex;
                             padding: 20px 0px;
+                            @include responsive(xl) {
+                                font-size: 20px;
+                            }
+                            @include responsive(sm) {
+                                padding: 0;
+                            }
                         }
                         &-display {
                             color: $secondary;
@@ -25,6 +47,13 @@
                             font-weight: 400;
                             line-height: 110%; /* 105.6px */
                             letter-spacing: -7.68px;
+                            @include responsive(xl) {
+                                font-size: 72px;
+                            }
+                            @include responsive(sm) {
+                                font-size: 48px;
+                                letter-spacing: -3.68px;
+                            }
                         }
                     }
                 }
@@ -34,20 +63,12 @@
                     justify-content: flex-end;
                     align-items: center;
                     gap: 24px;
-                    .btn-arrow {
-                        display: inline-flex;
-                        padding: 20px 20px;
-                        border: 1px solid $secondary;
-                        background-color: transparent;
-                        border-radius: 50%;
-                        transition: all 300ms ease;
-                        &:hover {
-                            background-color: $secondary;
-                            transform: scale(1.4);
-                            svg path {
-                                stroke: #ffffff;
-                            }
-                        }
+                    @include responsive(md) {
+                        padding: 28px 90px;
+                    }
+                    @include responsive(sm) {
+                        padding: 28px 0;
+                        justify-content: flex-start;
                     }
                 }
             }
@@ -58,6 +79,15 @@
                             display: flex;
                             align-items: flex-end;
                             gap: 180px;
+                            @include responsive(xl) {
+                                gap: 90px;
+                            }
+                            @include responsive(md) {
+                                gap: 45px;
+                            }
+                            @include responsive(sm) {
+                                gap: 0;
+                            }
                         }
                         &-active {
                             .card {
@@ -65,6 +95,9 @@
                                     height: 641px;
                                     transform: scaleY(1);
                                     transform-origin: bottom;
+                                    @include responsive(xl) {
+                                        height: 441px;
+                                    }
                                 }
                             }
                         }
@@ -75,11 +108,23 @@
                         flex-direction: column;
                         align-items: flex-end;
                         gap: 32px;
+                        @include responsive(xl) {
+                            max-width: 420px;
+                        }
+                        @include responsive(md) {
+                            gap: 16px;
+                        }
+                        @include responsive(sm) {
+                            max-width: 100%;
+                        }
                         &-image {
                             height: 330px;
                             transform: scaleY(1);
                             transform-origin: bottom;
                             transition: transform 0.3s ease-in-out;
+                            @include responsive(xl) {
+                                height: 230px;
+                            }
                         }
                         &-body {
                             display: flex;
@@ -92,20 +137,22 @@
                                 font-weight: 400;
                                 line-height: 150%; /* 48px */
                                 letter-spacing: -1.28px;
+                                @include responsive(xl) {
+                                    font-size: 26px;
+                                }
+                                @include responsive(md) {
+                                    font-size: 22px;
+                                }
                             }
                             .btn-link {
-                                display: flex;
-                                align-items: center;
-                                gap: 32px;
-
-                                color: $secondary;
-                                font-family: $font-body;
-                                font-size: 24px;
-                                font-weight: 500;
-                                line-height: 150%; /* 36px */
-                                padding: 0;
                                 img {
                                     max-width: 32px;
+                                }
+                                @include responsive(xl) {
+                                    font-size: 20px;
+                                    img {
+                                        max-width: 26px;
+                                    }
                                 }
                             }
                         }
