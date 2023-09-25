@@ -1,0 +1,214 @@
+.section-control {
+    flex-direction: column;
+    background-color: $dark-gray;
+    padding-block: 120px !important;
+    gap: 80px;
+
+    @include respondsive(md) {
+        gap: 40px;
+    }
+    .control {
+        flex-direction: column;
+        gap: 80px;
+
+        @include respondsive(xl) {
+            padding-block: 60px !important;
+        }
+        @include respondsive(md) {
+            gap: 40px;
+        }
+        @include respondsive(sm) {
+            padding-block: 40px !important;
+        }
+        &-decoration {
+            &.decoration {
+                &-left {
+                    position: absolute;
+                    top: -29px;
+                    left: -116px;
+                    max-width: 407.92px;
+                }
+                &-right {
+                    position: absolute;
+                    top: 52px;
+                    right: -180px;
+                    max-width: 348.65px;
+                }
+
+                @include respondsive(xl) {
+                    &-left {
+                        max-width: 200px;
+                    }
+                    &-right {
+                        max-width: 300.65px;
+                    }
+                }
+                @include respondsive(md) {
+                    &-left {
+                        display: none;
+                    }
+                    &-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .container,
+    .container-fluid {
+        margin: auto;
+        position: relative;
+    }
+    .container-fluid {
+        padding: unset;
+    }
+    .subtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-slider-control {
+            max-width: 100vw;
+            width: 100%;
+            .slide {
+                display: flex;
+                padding: 22px;
+                align-items: center;
+                border-radius: 24px;
+                background-color: #202023;
+                margin-inline: 15px;
+                transition: all 500ms ease;
+                cursor: pointer;
+                &-image {
+                    margin-right: 20px;
+                    img {
+                        max-width: 56px;
+                        width: 100%;
+                    }
+                }
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                    &-display {
+                        color: $white;
+                        font-family: Eudoxus Sans;
+                        font-size: 20px;
+                        font-weight: 800;
+                        transition: all 300ms ease;
+                    }
+                    &-span {
+                        color: $white;
+                        font-family: Eudoxus Sans;
+                        font-size: 14px;
+                        font-weight: 400;
+                        opacity: 0.6;
+                        transition: all 300ms ease;
+                    }
+                    &-desc {
+                        color: $white;
+                        font-family: Eudoxus Sans;
+                        font-size: 26px;
+                        font-weight: 700;
+                        letter-spacing: -1.56px;
+                        margin-left: 40px;
+                        transition: all 300ms ease;
+                    }
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+                    .slide-text {
+                        &-display {
+                            color: $dark-gray;
+                        }
+                        &-span {
+                            color: $dark-gray;
+                        }
+                        &-desc {
+                            color: $dark-gray;
+                        }
+                    }
+                }
+
+                @include respondsive(md) {
+                    &-image {
+                        margin-right: 10px;
+                        img {
+                            max-width: 46px;
+                        }
+                    }
+                    &-text {
+                        &-desc {
+                            font-size: 24px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            position: relative;
+
+            @include respondsive(sm) {
+                gap: 16px;
+            }
+            &-display {
+                color: #fdfdfd;
+                font-family: $font-body;
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 120%; /* 90px */
+                max-width: 789px;
+                z-index: 1;
+
+                @include respondsive(xl) {
+                    font-size: 64px;
+                    width: 70%;
+                }
+                @include respondsive(xl) {
+                    font-size: 48px;
+                }
+                @include respondsive(sm) {
+                    font-size: 32px;
+                    width: 100%;
+                }
+            }
+            .wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                z-index: 1;
+
+                @include respondsive(sm) {
+                    flex-direction: column-reverse;
+                    gap: 16px;
+                    .btn-link {
+                        display: flex;
+                    }
+                }
+                .subtext-text-desc {
+                    max-width: 381px;
+                    color: #fdfdfd;
+                    font-family: $font-body;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+            &-decoration {
+                position: absolute;
+                top: 88px;
+                right: 134px;
+
+                @include respondsive(sm) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

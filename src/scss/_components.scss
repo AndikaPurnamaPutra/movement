@@ -1,0 +1,27 @@
+.bd-code-snippet {
+    .bd-example {
+        border: 1px solid #000;
+        // background-color: rgb(57, 57, 61) !important;
+    }
+
+    .wrap {
+        border: 1px solid #000;
+        padding: 16px 32px;
+        small,
+        .btn-copy {
+            font-size: $p3-lg;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    .highlight {
+        border: 1px solid #000;
+        color: $primary-color;
+    }
+}
+
+textarea {
+    position: absolute;
+    left: -100%;
+}

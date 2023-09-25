@@ -1,0 +1,136 @@
+// header {
+//     position: sticky;
+//     top: 0;
+//     z-index: 10;
+// }
+
+.navbar {
+    padding-block: 24px;
+    // background-color: $black-color;
+    &-brand {
+        .icon-logo {
+            max-width: 96px;
+            width: 100%;
+        }
+    }
+
+    &-toggler {
+        display: none;
+        cursor: pointer;
+
+        &-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            background-image: url("/assets/images/menu.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            fill: $primary-color;
+        }
+    }
+
+    &-collapse {
+        z-index: 2;
+        background-color: $black-color;
+        .navbar-nav {
+            .nav-link {
+                text-decoration: none;
+                color: #c5c5c5;
+                font-size: $p3-lg;
+                transition: all 300ms ease;
+
+                &:not(:nth-child(4)) {
+                    margin-right: 26px;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .btn-primary {
+                display: none;
+            }
+        }
+        &.active {
+            height: 360px;
+
+            .navbar-nav {
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn-primary {
+        display: block;
+    }
+
+    @media (max-width: 1200px) {
+        &-brand {
+            max-width: 82px;
+        }
+    }
+
+    @media (min-width: 993px) {
+        &-collapse {
+            &.active {
+                height: unset;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        &-brand {
+            .icon-logo {
+                max-width: 64px;
+            }
+        }
+        &-collapse {
+            height: 0;
+            position: absolute;
+            top: 99px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transition: all 300ms ease;
+            overflow: hidden;
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                gap: 34px;
+                width: fit-content;
+                margin: 40px auto;
+                text-align: center;
+                transition: all 500ms ease;
+                opacity: 0;
+
+                .btn-primary {
+                    display: inline-block;
+                }
+
+                .nav-link {
+                    margin-right: unset !important;
+                }
+            }
+        }
+
+        &-toggler {
+            display: block;
+        }
+
+        .btn-primary {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-brand {
+            .icon-logo {
+                max-width: 52px;
+            }
+        }
+    }
+}

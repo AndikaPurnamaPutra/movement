@@ -1,0 +1,52 @@
+// Variables
+@font-face {
+    font-family: "eudoxus_sansbold";
+    src: url("/assets/fonts/eudoxussans-bold-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "eudoxus_sansmedium";
+    src: url("/assets/fonts/eudoxussans-medium-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "eudoxus_sansregular";
+    src: url("/assets/fonts/eudoxussans-regular-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Font Family
+$eudoxus_sansbold: "eudoxus_sansbold";
+$eudoxus_sansmedium: "eudoxus_sansmedium";
+$eudoxus_sansregular: "eudoxus_sansregular";
+
+// Color
+$primary-color: #ffffff;
+$secondary-color: #b3dd62;
+$black-color: #1d1d20;
+$dark-charcoal-grey: #39393d;
+$raisin-black: #202023;
+$dark-gray: #222226;
+$dark-charcoal-grey: rgba(57, 57, 61, 1);
+$purple: #bfb1f5;
+$yellow-green: rgba(179, 221, 98, 1);
+
+// Font-Size
+$h1-lg: 90px;
+$h1-md: 54px;
+$h2-lg: 75px;
+$h2-md: 64px;
+$h4-lg: 40px;
+$h5-lg: 32px;
+$h5-sm: 28px;
+$p1-lg: 24px;
+$p2-lg: 20px;
+$p3-lg: 16px;

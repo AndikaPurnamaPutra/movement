@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $eudoxus_sansregular;
+    background-color: $black-color;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-fs {
+        justify-content: flex-start;
+    }
+
+    &-jc-fe {
+        justify-content: flex-end;
+    }
+
+    &-ai-fs {
+        align-items: flex-start;
+    }
+
+    &-ai-fe {
+        align-items: flex-end;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-fd-r {
+        flex-direction: row;
+    }
+
+    &-fd-rr {
+        flex-direction: row-reverse;
+    }
+
+    &-fd-c {
+        flex-direction: column;
+    }
+
+    &-fd-cr {
+        flex-direction: column-reverse;
+    }
+}
+
+.bg-body-tertiary {
+    background-color: $dark-charcoal-grey;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+.label {
+    color: $secondary-color;
+    padding: 12px 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    font-family: $eudoxus_sansregular;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.heading-text {
+    margin-top: 36px;
+    font-size: $h2-lg;
+    font-family: $eudoxus_sansbold;
+    color: $primary-color;
+    line-height: 120%;
+
+    span:nth-child(1) {
+        color: $purple;
+    }
+
+    span:nth-child(2) {
+        color: $secondary-color;
+    }
+}
+
+.desc-text {
+    font-size: $p3-lg;
+    color: $primary-color;
+    font-family: $eudoxus_sansregular;
+    line-height: 160%;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .heading-text {
+        font-size: $h2-md;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+
+    .label {
+        padding: 12px 22px;
+        border-radius: 22px;
+        font-size: 12px;
+    }
+
+    .heading-text {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .label {
+        padding: 12px 22px;
+        border-radius: 22px;
+        font-size: 12px;
+    }
+
+    .heading-text {
+        font-size: 40px;
+    }
+}

@@ -1,3 +1,29 @@
+// pre{
+//     background-color: red;
+//     code{
+//         position: relative;
+//         overflow: auto;
+//         margin: 5px 0;
+//         padding: 1.75rem 0 1.75rem 1rem;
+//         border-radius: 10px;
+//         button{
+//             position: absolute;
+//             top: 5px;
+//             right: 5px;
+//             font-size: 0.9rem;
+//             padding: 0.15rem;
+//             background-color: #828282;
+//             border: ridge 1px #7b7b7c;
+//             border-radius: 5px;
+//             text-shadow: #c4c4c4 0 0 2px;
+//             &:hover{
+//                 cursor: pointer;
+//                 background-color: #bcbabb;
+//             }
+//         }
+//     }
+// };
+
 .container-pre {
     // @include flex(row , center , center);
     display: flex;
@@ -10,7 +36,7 @@
             overflow: auto;
             padding: 1rem 1rem 1rem 1rem;
             border-radius: 10px;
-            background-color: $secondary;
+            background-color: $black;
             max-width: 1200px;
             width: 100%;
             &-code {
@@ -44,7 +70,7 @@
     border: solid 2px $white;
     padding: 8px 20px;
     border-radius: 20px;
-    color: $secondary;
+    color: $black;
     background-color: transparent;
     cursor: pointer;
     &:hover {
@@ -53,11 +79,11 @@
     a {
         color: $white;
         &:hover {
-            color: $secondary;
+            color: $black;
         }
     }
 }
 
 .source-code:hover > a {
-    color: $secondary;
+    color: $black;
 }

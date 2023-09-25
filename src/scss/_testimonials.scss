@@ -1,0 +1,252 @@
+.testimonials {
+    padding-block: 120px;
+    background-image: url("/assets/images/testimonials-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 312.33px;
+    background-position: bottom 0 left -122px;
+    .swiper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        margin-top: 82px;
+        .desc-text {
+            font-size: 24px;
+        }
+    }
+
+    .swiper-pagination {
+        text-align: start;
+        color: $primary-color;
+        top: 152px;
+        font-family: $eudoxus_sansmedium;
+        font-size: 24px;
+    }
+
+    &-right {
+        gap: 36px;
+        width: 70%;
+        .slider {
+            width: 100%;
+            overflow-x: hidden;
+            &-item {
+                .desc-text {
+                    font-size: 36px;
+                    font-family: $eudoxus_sansregular;
+                    max-width: 790px;
+                    margin-bottom: 120px;
+                }
+
+                .profile {
+                    gap: 32px;
+                    .img-profile {
+                        max-width: 56px;
+                        width: 100%;
+                    }
+
+                    .name {
+                        font-size: 24px;
+                        font-family: $eudoxus_sansmedium;
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .btn-arrow {
+                position: absolute;
+                bottom: 120px;
+                right: 0;
+                z-index: 10;
+                cursor: pointer;
+
+                .icon-arrow {
+                    width: 102px;
+                }
+            }
+        }
+
+        .users-active {
+            justify-content: space-between;
+            .total {
+                font-size: $h2-lg;
+                font-family: $eudoxus_sansbold;
+                color: $primary-color;
+
+                span {
+                    color: $secondary-color;
+                }
+            }
+
+            .desc-text {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-block: 90px;
+        &-right {
+            .slider {
+                &-item {
+                    .desc-text {
+                        font-size: 26px;
+                        margin-bottom: 90px;
+                    }
+
+                    .profile {
+                        gap: 24px;
+                        .img-profile {
+                            max-width: 46px;
+                            width: 100%;
+                        }
+
+                        .name {
+                            font-size: 18px;
+                            font-family: $eudoxus_sansmedium;
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                .btn-arrow {
+                    .icon-arrow {
+                        width: 82px;
+                    }
+                }
+            }
+
+            .users-active {
+                .total {
+                    font-size: $h2-md;
+                }
+
+                .desc-text {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-left {
+            .desc-text {
+                font-size: 18px;
+            }
+        }
+
+        .swiper-pagination {
+            text-align: start;
+            color: $primary-color;
+            top: 152px;
+            font-family: $eudoxus_sansmedium;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-block: 60px;
+        background-image: unset;
+        .swiper {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-right {
+            gap: 24px;
+            width: 100%;
+            .slider {
+                &-item {
+                    .desc-text {
+                        margin-bottom: 60px;
+                        font-size: 26px;
+                        max-width: unset;
+                    }
+                }
+
+                .btn-arrow {
+                    bottom: 132px;
+                }
+            }
+
+            .users-active {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+
+                .total {
+                    font-size: 52px;
+                }
+            }
+        }
+
+        &-left {
+            margin-top: unset;
+            .desc-text {
+                margin-bottom: 20px;
+            }
+        }
+
+        .swiper-pagination {
+            position: relative;
+            text-align: start;
+            color: $primary-color;
+            top: 4px;
+            font-family: $eudoxus_sansmedium;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-block: 40px;
+        &-right {
+            .slider {
+                &-item {
+                    .desc-text {
+                        margin-bottom: 40px;
+                        font-size: $p2-lg;
+                        max-width: unset;
+                    }
+
+                    .profile {
+                        gap: 14px;
+                        .img-profile {
+                            max-width: 38px;
+                            width: 100%;
+                        }
+
+                        .name {
+                            font-size: $p3-lg;
+                            font-family: $eudoxus_sansmedium;
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                .btn-arrow {
+                    bottom: 124px;
+                    .icon-arrow {
+                        width: 68px;
+                    }
+                }
+            }
+
+            .users-active {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+
+                .total {
+                    font-size: 42px;
+                }
+            }
+        }
+
+        &-left {
+            .desc-text {
+                margin-bottom: 16px;
+            }
+        }
+
+        .swiper {
+            gap: 16px;
+        }
+    }
+}
