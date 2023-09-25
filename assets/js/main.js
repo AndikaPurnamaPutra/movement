@@ -71,7 +71,7 @@ $(".subtext-text-desc").addClass("animated fadeIn");
 
 // logic copy clipboard
 
-const copyButtonLabel = "Copy Code";
+const copyButtonLabel = "Components";
 
 // use a class selector if available
 let blocks = document.querySelectorAll("pre");
