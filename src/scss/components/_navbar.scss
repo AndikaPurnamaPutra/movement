@@ -32,6 +32,9 @@
                     font-weight: 400;
                     line-height: 150%; /* 36px */
                     letter-spacing: -0.96px;
+                    @include responsive(md) {
+                        font-size: 20px;
+                    }
                     &-dekstop {
                         @include responsive(md) {
                             display: none;
@@ -79,12 +82,18 @@
         }
         &-logo {
             a {
-                color: $white;
+                color: $light-white;
                 font-family: $font-body;
                 font-size: 32px;
                 font-weight: 500;
                 line-height: 150%; /* 48px */
                 margin-bottom: 40px;
+                @include responsive(md) {
+                    font-size: 24px;
+                }
+                &:hover {
+                    color: $white;
+                }
             }
         }
         &-btn-responsive {
