@@ -28,7 +28,8 @@
       }
 }
 
-
+//font families
+// $fontFamily: "Italian Plate No1 Expanded", sans-serif;
 
 
 $media: (
@@ -40,7 +41,7 @@ $media: (
 );
 
 
-@mixin respondsive($breakpoint) {
+@mixin responsive($breakpoint) {
   @each $breakpoints, $size in $media {
     @if $breakpoint == $breakpoints {
       @media screen and (max-width: $size) {
