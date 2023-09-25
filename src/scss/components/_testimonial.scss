@@ -1,230 +1,123 @@
 .section-testimonial {
     .container {
-        padding-block: 120px;
-        position: relative;
-
-        @include respondsive(xl) {
-            padding-block: 60px !important;
-        }
-        @include respondsive(sm) {
-            padding-block: 40px !important;
-        }
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .swiper {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-
-        @include respondsive(md) {
-            flex-direction: column;
-            gap: 28px;
-        }
-        .subtext {
-            position: relative;
-            display: flex;
-            &-text {
-                &-desc {
-                    color: $white;
-                    font-family: $font-body;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 160%; /* 38.4px */
+        &-testimonial {
+            padding-block: 100px;
+            gap: 70px;
+            @include responsive(md) {
+                padding-block: 50px;
+                .grid-9,
+                .grid-3 {
+                    width: 100%;
                 }
             }
-            .swiper-pagination {
-                position: absolute;
-                top: 64px;
-                width: unset;
-                left: 0;
-                color: $white;
-                font-family: Eudoxus Sans;
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 160%; /* 38.4px */
-
-                @include respondsive(md) {
+            .head-content {
+                display: flex;
+                justify-content: flex-end;
+                .subtext-image {
+                    img {
+                        max-width: 120px;
+                        @include responsive(xl) {
+                            max-width: 95px;
+                        }
+                    }
+                }
+                @include responsive(md) {
                     display: none;
                 }
             }
-        }
-        .slider {
-            width: 70%;
-            overflow-x: hidden;
-            position: relative;
-
-            @include respondsive(md) {
-                width: 100%;
-            }
-            &-item {
-                .subtext-text {
-                    &-span {
-                        font-family: $font-body;
-                        color: $primary;
-                        text-align: center;
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 160%;
-                        text-transform: uppercase;
-                        display: inline-flex;
-                        padding: 12px 24px;
-                        border-radius: 24px;
-                        background: rgba(255, 255, 255, 0.12);
-                        margin-bottom: 36px;
-
-                        @include respondsive(md) {
-                            margin-bottom: 24px;
+            .body-content {
+                .subtext {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 64px;
+                    @include responsive(sm) {
+                        gap: 32px;
+                    }
+                    &-text {
+                        &-display {
+                            color: $secondary;
+                            font-family: $font-body;
+                            font-size: $h3;
+                            font-weight: 400;
+                            line-height: 110%; /* 70.4px */
+                            letter-spacing: -5.12px;
+                            @include responsive(xl) {
+                                font-size: 54px;
+                            }
+                            @include responsive(sm) {
+                                font-size: 34px;
+                                letter-spacing: -3px;
+                            }
                         }
                     }
-                    &-desc {
-                        color: $white;
-                        font-family: $font-body;
-                        font-size: 36px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 160%; /* 57.6px */
-                        margin-bottom: 120px;
-
-                        @include respondsive(xl) {
-                            font-size: 32px;
-                            margin-bottom: 60px;
+                    &-card {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 64px;
+                        @include responsive(sm) {
+                            gap: 32px;
                         }
-                        @include respondsive(sm) {
-                            font-size: 20px;
-                            margin-bottom: 30px;
-                        }
-                    }
-                    &-profile {
-                        &.profile,
-                        .profile {
+                        .card {
                             display: flex;
+                            max-width: 550px;
                             align-items: center;
                             gap: 32px;
-                            img {
-                                max-width: 56px;
-                                width: 100%;
-                            }
-
-                            @include respondsive(sm) {
+                            @include responsive(sm) {
                                 flex-direction: column;
                                 align-items: flex-start;
                                 gap: 16px;
                             }
-                            &-name {
-                                color: $white;
-                                font-family: $font-body;
-                                font-size: 24px;
-                                font-weight: 500;
-                                line-height: 160%; /* 38.4px */
-                            }
-
-                            @include respondsive(xl) {
-                                gap: 24px;
-                                img {
-                                    max-width: 48px;
-                                }
-                                &-name {
-                                    font-size: 20px;
+                            &-image {
+                                max-width: 180px;
+                                @include responsive(sm) {
+                                    max-width: 100%;
                                 }
                             }
-                            @include respondsive(sm) {
-                                gap: 24px;
-                                img {
-                                    max-width: 48px;
+                            &-body {
+                                &-desc {
+                                    color: $light-black;
+                                    font-family: $font-body;
+                                    font-size: $p-md;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                    letter-spacing: -0.8px;
+                                    span {
+                                        font-style: italic;
+                                        font-family: $font-display;
+                                    }
                                 }
-                                &-name {
-                                    font-size: 18px;
+                                &-span {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    gap: 12px;
+                                    color: $light-black;
+                                    font-family: $font-body;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 150%; /* 24px */
+                                    letter-spacing: -0.64px;
+                                    .line {
+                                        width: 48px;
+                                        height: 1px;
+                                        background-color: $secondary;
+                                    }
+                                }
+                                &-display {
+                                    @extend .card-body-desc;
+                                    color: $secondary;
+                                    .text-primary {
+                                        font-family: $font-body;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-            .btn-arrow {
-                display: inline-flex;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                padding: 16px 24px;
-                z-index: 10;
-                background-color: $bg-color;
-                img {
-                    max-width: 102px;
-                }
-                @include respondsive(sm) {
-                    padding: 16px;
-                    img {
-                        width: 64px;
-                    }
-                }
-            }
-        }
-    }
-    .user-active {
-        margin-top: 36px;
-        margin-left: 1%;
-        display: flex;
-        align-items: center;
-        gap: 60px;
-        justify-content: center;
-        width: 100%;
-
-        @include respondsive(xl) {
-            margin-left: 8%;
-        }
-        @include respondsive(md) {
-            margin-left: 0;
-            justify-content: flex-start;
-        }
-        .total {
-            color: $white;
-            font-family: $font-body;
-            font-size: 75px;
-            font-weight: 700;
-            line-height: 120%; /* 90px */
-        }
-        .desc-text {
-            color: $white;
-            font-family: $font-body;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 160%; /* 32px */
-        }
-
-        @include respondsive(md) {
-            gap: 30px;
-            .total {
-                font-size: 64px;
-            }
-            .desc-text {
-                font-size: 18px;
-            }
-        }
-        @include respondsive(sm) {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            .total {
-                font-size: 64px;
-            }
-            .desc-text {
-                font-size: 18px;
-            }
-        }
-    }
-    .decoration {
-        position: absolute;
-        bottom: 40px;
-        left: -122px;
-        max-width: 437.313px;
-
-        @include respondsive(xl) {
-            max-width: 257.313px;
-        }
-        @include respondsive(md) {
-            display: none;
         }
     }
 }
