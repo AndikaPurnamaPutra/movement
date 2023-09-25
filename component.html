@@ -6,14 +6,8 @@
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" />
         <!-- <link rel="icon" href="./assets/images/Logo.svg" /> -->
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Spectral:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
         <!-- slick -->
         <!-- Add the slick-theme.css if you want default styling -->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -25,57 +19,54 @@
         />
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <title>Movement Interior Designer - Components</title>
+
+        <title>Lord Bank Financial - Components</title>
     </head>
     <body>
-        <!-- navbar -->
-        <nav id="navbar" class="navbar bg-dark">
-            <div class="container-fluid container-fluid-nav">
-                <div class="nav">
-                    <div class="nav-menu nav-menu-dekstop">
-                        <div class="nav-menu-item item">
-                            <a href="#" class="item-link item-link-dekstop">SERVICES</a>
-                        </div>
-                    </div>
-                    <div class="nav-logo">
-                        <a href="#"> Movement<span class="text-primary">.</span> </a>
-                    </div>
-                    <button class="nav-btn-responsive"></button>
-                    <div class="nav-menu nav-menu-responsive">
-                        <div class="nav-menu-item item">
-                            <a href="#" class="item-link item-link-mobile">SERVICES</a>
-                            <a href="#" class="item-link">CONTACT US</a>
-                        </div>
+        <nav id="navbar" class="navbar">
+            <div id="nav" class="container-fluid nav">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="assets/image/Logo.svg" alt="" class="img" />
+                    </a>
+                </div>
+                <button class="nav-btn-responsive"></button>
+                <div class="nav-menu">
+                    <div class="nav-menu-item item">
+                        <a href="#" class="item-link">Why LordBank</a>
+                        <a href="#" class="item-link">Pricing</a>
+                        <a href="#" class="item-link">About Us</a>
+                        <a href="#" class="item-link">Contact Us</a>
+                        <button class="btn btn-primary">Open an Account</button>
                     </div>
                 </div>
+                <button class="btn btn-primary nav-btn">Open an Account</button>
             </div>
         </nav>
-        <!-- end navbar -->
 
         <!-- navbar copy code -->
-        <section style="margin-block: 120px">
+        <section style="margin-top: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;nav id=&quot;navbar&quot; class=&quot;navbar bg-dark&quot;&gt;
-                &lt;div class=&quot;container-fluid container-fluid-nav&quot;&gt;
-                    &lt;div class=&quot;nav&quot;&gt;
-                        &lt;div class=&quot;nav-menu nav-menu-dekstop&quot;&gt;
-                            &lt;div class=&quot;nav-menu-item item&quot;&gt;
-                                &lt;a href=&quot;#&quot; class=&quot;item-link item-link-dekstop&quot;&gt;SERVICES&lt;/a&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;nav-logo&quot;&gt;
-                            &lt;a href=&quot;#&quot;&gt; Movement&lt;span class=&quot;text-primary&quot;&gt;.&lt;/span&gt; &lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;button class=&quot;nav-btn-responsive&quot;&gt;&amp;lt;/button&gt;
-                        &lt;div class=&quot;nav-menu nav-menu-responsive&quot;&gt;
-                            &lt;div class=&quot;nav-menu-item item&quot;&gt;
-                                &lt;a href=&quot;#&quot; class=&quot;item-link item-link-mobile&quot;&gt;SERVICES&lt;/a&gt;
-                                &lt;a href=&quot;#&quot; class=&quot;item-link&quot;&gt;CONTACT US&lt;/a&gt;
-                            &lt;/div&gt;
+            &lt;nav id=&quot;navbar&quot; class=&quot;navbar&quot;&gt;
+                &lt;div id=&quot;nav&quot; class=&quot;container-fluid nav&quot;&gt;
+                    &lt;div class=&quot;nav-logo&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;
+                            &lt;img src=&quot;assets/image/Logo.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;button class=&quot;nav-btn-responsive&quot;&gt;&lt;/button&gt;
+                    &lt;div class=&quot;nav-menu&quot;&gt;
+                        &lt;div class=&quot;nav-menu-item item&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;item-link&quot;&gt;Why LordBank&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;item-link&quot;&gt;Pricing&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;item-link&quot;&gt;About Us&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;item-link&quot;&gt;Contact Us&lt;/a&gt;
+                            &lt;button class=&quot;btn btn-primary&quot;&gt;Open an Account&lt;/button&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
+                    &lt;button class=&quot;btn btn-primary nav-btn&quot;&gt;Open an Account&lt;/button&gt;
                 &lt;/div&gt;
             &lt;/nav&gt;
                     </code>
@@ -85,143 +76,39 @@
         <!-- navbar copy code end -->
 
         <!-- section header -->
-        <section class="section-header bg-dark">
+        <section class="section-header">
             <div class="container container-header">
-                <div class="head-content">
-                    <div class="subtext grid-7">
-                        <div
-                            class="subtext-list"
-                            data-aos="zoom-in-right"
+                <div class="subtext">
+                    <div class="subtext-text">
+                        <span class="subtext-text-span" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"
+                            >WELCOME TO LORDBACK</span
+                        >
+                        <h1
+                            class="subtext-text-display"
+                            data-aos="zoom-out-up"
                             data-aos-duration="1000"
                             data-aos-once="true"
                         >
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">ARCHITECTURE</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">DESIGN</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">CONCEPT</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">PLANNING</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subtext-text" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">
-                            <img src="assets/image/header-span-image-2.svg" alt="" class="img text-image" />
-                            <p class="subtext-text-desc">
-                                Scelerisque viverra mauris in aliquam sem fringilla. Amet porttitor eget dolor morbi
-                                proin fermentum.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subtext grid-5">
-                        <div
-                            class="subtext-image"
-                            data-aos="zoom-in-left"
+                            Need Financial Freedom Think <span class="text-secondary">Lord</span
+                            ><span class="text-primary">Bank</span>
+                        </h1>
+                        <p
+                            class="subtext-text-desc"
+                            data-aos="zoom-out-up"
                             data-aos-duration="1000"
                             data-aos-once="true"
                         >
-                            <img src="assets/image/header-image.png" alt="" class="img" />
-                        </div>
+                            Unify all your communication channels, automate workflow
+                        </p>
                     </div>
-                </div>
-                <div class="body-content">
-                    <div class="subtext">
-                        <div class="subtext-text">
-                            <h1
-                                class="subtext-text-display"
-                                data-aos="zoom-in"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                <span class="text-primary">Creative</span
-                                ><span><img src="assets/image/header-span-image.svg" alt="" /></span>
-                            </h1>
-                        </div>
-                        <div class="subtext-text">
-                            <h1
-                                class="subtext-text-display"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                Interior Designer
-                            </h1>
-                        </div>
+                    <div class="subtext-image" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
+                        <img src="assets/image/image-header.svg" alt="" class="img" />
+                    </div>
+                    <div class="subtext-decoration decoration-left">
+                        <img src="assets/image/decoration-left-header.svg" alt="" class="img" />
+                    </div>
+                    <div class="subtext-decoration decoration-right">
+                        <img src="assets/image/decoration-right-header.svg" alt="" class="img" />
                     </div>
                 </div>
             </div>
@@ -229,48 +116,33 @@
         <!-- end section header -->
 
         <!-- header copy code -->
-        <section style="margin-block: 120px">
+        <section>
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-header bg-dark&quot;&gt;
+            &lt;section class=&quot;section-header&quot;&gt;
                 &lt;div class=&quot;container container-header&quot;&gt;
-                    &lt;div class=&quot;head-content&quot;&gt;
-                        &lt;div class=&quot;subtext grid-7&quot;&gt;
-                            &lt;div class=&quot;subtext-list&quot; data-aos=&quot;zoom-in-right&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;div class=&quot;subtext-list-item item&quot;&gt;
-                                    &lt;div class=&quot;item-image&quot;&gt;
-                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 16 16&quot; fill=&quot;none&quot;&gt;
-                                            &lt;path d=&quot;M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
-                                        &lt;/svg&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;item-text&quot;&gt;
-                                        &lt;h5 class=&quot;item-text-desc&quot;&gt;ARCHITECTURE&lt;/h5&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                <!-- ... (similar code for other subtext-list-items) ... -->
-                            &lt;/div&gt;
-                            &lt;div class=&quot;subtext-text&quot; data-aos=&quot;zoom-out&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;img src=&quot;assets/image/header-span-image-2.svg&quot; alt=&quot;&quot; class=&quot;img text-image&quot;/&gt;
-                                &lt;p class=&quot;subtext-text-desc&quot;&gt;Scelerisque viverra mauris in aliquam sem fringilla. Amet porttitor eget dolor morbi proin fermentum.&lt;/p&gt;
-                            &lt;/div&gt;
+                    &lt;div class=&quot;subtext&quot;&gt;
+                        &lt;div class=&quot;subtext-text&quot;&gt;
+                            &lt;span class=&quot;subtext-text-span&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                                WELCOME TO LORDBACK
+                            &lt;/span&gt;
+                            &lt;h1 class=&quot;subtext-text-display&quot; data-aos=&quot;zoom-out-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                                Need Financial Freedom Think 
+                            &lt;span class=&quot;text-secondary&quot;&gt;Lord&lt;/span&gt;&lt;span class=&quot;text-primary&quot;&gt;Bank&lt;/span&gt;
+                            &lt;/h1&gt;
+                            &lt;p class=&quot;subtext-text-desc&quot; data-aos=&quot;zoom-out-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                                Unify all your communication channels, automate workflow
+                            &lt;/p&gt;
                         &lt;/div&gt;
-                        &lt;div class=&quot;subtext grid-5&quot;&gt;
-                            &lt;div class=&quot;subtext-image&quot; data-aos=&quot;zoom-in-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;img src=&quot;assets/image/header-image.png&quot; alt=&quot;&quot; class=&quot;img&quot;/&gt;
-                            &lt;/div&gt;
+                        &lt;div class=&quot;subtext-image&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                            &lt;img src=&quot;assets/image/image-header.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
                         &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;body-content&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text&quot;&gt;
-                                &lt;h1 class=&quot;subtext-text-display&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                    &lt;span class=&quot;text-primary&quot;&gt;Creative&lt;/span&gt;&lt;span&gt;&lt;img src=&quot;assets/image/header-span-image.svg&quot; alt=&quot;&quot;/&gt;&lt;/span&gt;
-                                &lt;/h1&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;subtext-text&quot;&gt;
-                                &lt;h1 class=&quot;subtext-text-display&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;Interior Designer&lt;/h1&gt;
-                            &lt;/div&gt;
+                        &lt;div class=&quot;subtext-decoration decoration-left&quot;&gt;
+                            &lt;img src=&quot;assets/image/decoration-left-header.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;subtext-decoration decoration-right&quot;&gt;
+                            &lt;img src=&quot;assets/image/decoration-right-header.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -281,79 +153,587 @@
         </section>
         <!-- header copy code end -->
 
-        <!-- section about -->
-        <section class="section-about bg-light-yellow">
-            <div class="container container-about">
-                <div class="head-content">
-                    <div class="subtext">
-                        <div class="subtext-text wrapper">
-                            <div
-                                class="subtext-text-image"
+        <!-- section partners -->
+        <section class="section-partner" style="margin-top: 120px">
+            <div class="container-fluid">
+                <div class="slider-partner" data-aos="zoom-out" data-aos-duration="1000" data-aos-once="true">
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/TransferWise-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Manulife-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Investopedia-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Santander_Bank-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/MUFG_Union_Bank-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/TransferWise-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Manulife-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Investopedia-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/Santander_Bank-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-item">
+                            <img src="assets/image/MUFG_Union_Bank-Logo.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section partners -->
+
+        <!-- partner copy code -->
+        <section style="margin-top: 120px">
+            <div class="container container-pre pre">
+                <pre class="pre-wrapper">
+                    <code class="pre-wrapper-code">
+            &lt;section class=&quot;section-partner&quot;&gt;
+                &lt;div class=&quot;container-fluid&quot;&gt;
+                    &lt;div class=&quot;slider-partner&quot; data-aos=&quot;zoom-out&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/TransferWise-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Manulife-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Investopedia-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Santander_Bank-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/MUFG_Union_Bank-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!--  --&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/TransferWise-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Manulife-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Investopedia-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/Santander_Bank-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slider-item&quot;&gt;
+                                &lt;img src=&quot;assets/image/MUFG_Union_Bank-Logo.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <!-- partner copy code end -->
+
+        <!-- section features -->
+        <section class="section-feature">
+            <div class="feature container">
+                <div class="subtext">
+                    <div class="subtext-text">
+                        <span
+                            class="subtext-text-span"
+                            data-aos="zoom-in-up"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                            >OUR FEATURES</span
+                        >
+                        <h2
+                            class="subtext-text-display"
+                            data-aos="zoom-out-up"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                        >
+                            All <span class="text-secondary">Majority</span>
+                            <span class="text-primary">Features</span> You Need
+                        </h2>
+                    </div>
+                </div>
+                <div class="feature-decoration">
+                    <img src="assets/image/decoration-feature.svg" alt="" class="img" />
+                </div>
+            </div>
+            <div class="subtext container-fluid">
+                <div class="subtext-card">
+                    <div class="card card-first" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="card-body">
+                            <h5 class="card-body-display">Multi-device support</h5>
+                            <p class="card-body-desc">
+                                Delivery through multiple channels, including mobile, tablet and desktop.
+                            </p>
+                            <button class="btn btn-primary">Open an Account</button>
+                        </div>
+                        <div class="card-icon">
+                            <div class="icon">
+                                <img src="assets/image/apple.svg" alt="" />
+                            </div>
+                            <div class="icon">
+                                <img src="assets/image/windows.svg" alt="" />
+                            </div>
+                            <div class="icon">
+                                <img src="assets/image/android.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="card-decoration">
+                            <img src="assets/image/card-decoration.svg" alt="" class="img" />
+                        </div>
+                    </div>
+                    <div class="card card-small" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                        <div class="card-body">
+                            <h5 class="card-body-display">Simple International payments</h5>
+                            <p class="card-body-desc">
+                                Delivery through multiple channels, including mobile, tablet and desktop.
+                            </p>
+                        </div>
+                        <div class="card-decoration">
+                            <img src="assets/image/card-decoration.svg" alt="" class="img" />
+                        </div>
+                    </div>
+                    <div
+                        class="card card-small card-three"
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                        data-aos-once="true"
+                    >
+                        <div class="card-body">
+                            <h5 class="card-body-display">Free-of-charge Payments</h5>
+                            <p class="card-body-desc">
+                                Delivery through multiple channels, including mobile, tablet and desktop.
+                            </p>
+                        </div>
+                        <div class="card-decoration">
+                            <img src="assets/image/card-decoration.svg" alt="" class="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section features -->
+
+        <!-- feature copy code -->
+        <section style="margin-top: 120px">
+            <div class="container container-pre pre">
+                <pre class="pre-wrapper">
+                    <code class="pre-wrapper-code">
+            &lt;section class=&quot;section-feature&quot;&gt;
+                &lt;div class=&quot;feature container&quot;&gt;
+                    &lt;div class=&quot;subtext&quot;&gt;
+                        &lt;div class=&quot;subtext-text&quot;&gt;
+                            &lt;span
+                                class=&quot;subtext-text-span&quot;
+                                data-aos=&quot;zoom-in-up&quot;
+                                data-aos-duration=&quot;1000&quot;
+                                data-aos-once=&quot;true&quot;
+                                &gt;OUR FEATURES&lt;/span
+                            &gt;
+                            &lt;h2
+                                class=&quot;subtext-text-display&quot;
+                                data-aos=&quot;zoom-out-up&quot;
+                                data-aos-duration=&quot;1000&quot;
+                                data-aos-once=&quot;true&quot;
+                            &gt;
+                                All &lt;span class=&quot;text-secondary&quot;&gt;Majority&lt;/span&gt;
+                                &lt;span class=&quot;text-primary&quot;&gt;Features&lt;/span&gt; You Need
+                            &lt;/h2&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;feature-decoration&quot;&gt;
+                        &lt;img src=&quot;assets/image/decoration-feature.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;subtext container-fluid&quot;&gt;
+                    &lt;div class=&quot;subtext-card&quot;&gt;
+                        &lt;div class=&quot;card card-first&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                            &lt;div class=&quot;card-body&quot;&gt;
+                                &lt;h5 class=&quot;card-body-display&quot;&gt;Multi-device support&lt;/h5&gt;
+                                &lt;p class=&quot;card-body-desc&quot;&gt;
+                                    Delivery through multiple channels, including mobile, tablet and desktop.
+                                &lt;/p&gt;
+                                &lt;button class=&quot;btn btn-primary&quot;&gt;Open an Account&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-icon&quot;&gt;
+                                &lt;div class=&quot;icon&quot;&gt;
+                                    &lt;img src=&quot;assets/image/apple.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;icon&quot;&gt;
+                                    &lt;img src=&quot;assets/image/windows.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;icon&quot;&gt;
+                                    &lt;img src=&quot;assets/image/android.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-decoration&quot;&gt;
+                                &lt;img src=&quot;assets/image/card-decoration.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card card-small&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                            &lt;div class=&quot;card-body&quot;&gt;
+                                &lt;h5 class=&quot;card-body-display&quot;&gt;Simple International payments&lt;/h5&gt;
+                                &lt;p class=&quot;card-body-desc&quot;&gt;
+                                    Delivery through multiple channels, including mobile, tablet and desktop.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-decoration&quot;&gt;
+                                &lt;img src=&quot;assets/image/card-decoration.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div
+                            class=&quot;card card-small card-three&quot;
+                            data-aos=&quot;zoom-in&quot;
+                            data-aos-duration=&quot;1000&quot;
+                            data-aos-once=&quot;true&quot;
+                        &gt;
+                            &lt;div class=&quot;card-body&quot;&gt;
+                                &lt;h5 class=&quot;card-body-display&quot;&gt;Free-of-charge Payments&lt;/h5&gt;
+                                &lt;p class=&quot;card-body-desc&quot;&gt;
+                                    Delivery through multiple channels, including mobile, tablet and desktop.
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-decoration&quot;&gt;
+                                &lt;img src=&quot;assets/image/card-decoration.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <!-- feature copy code end -->
+
+        <!-- section control -->
+        <section class="section-control">
+            <div class="subtext container-fluid">
+                <div
+                    class="subtext-slider-control slider-control"
+                    data-aos="zoom-out"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                >
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-ticket.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Netflix Monthly</h5>
+                                <span class="slide-text-span">28 Sept 2022 </span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">+$15.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-game.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Play Station 5</h5>
+                                <span class="slide-text-span">27 Sept 2022 </span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">-$450.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-ticket.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Staycation</h5>
+                                <span class="slide-text-span">31 Aug 2022</span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">-$390.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-ticket.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Netflix Monthly</h5>
+                                <span class="slide-text-span">28 Sept 2022 </span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">+$15.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-game.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Play Station 5</h5>
+                                <span class="slide-text-span">27 Sept 2022 </span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">-$450.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="assets/image/icon-ticket.svg" alt="" />
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-display">Staycation</h5>
+                                <span class="slide-text-span">31 Aug 2022</span>
+                            </div>
+                            <div class="slide-text">
+                                <h5 class="slide-text-desc">-$390.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control container">
+                <div class="subtext container">
+                    <div class="subtext-text">
+                        <h2
+                            class="subtext-text-display"
+                            data-aos="zoom-in-up"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                        >
+                            Be In Complete Control
+                        </h2>
+                        <div class="wrapper">
+                            <button
+                                class="btn btn-link"
                                 data-aos="zoom-in-up"
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                             >
-                                <img src="assets/image/about-image.png" alt="" class="img" />
-                            </div>
-                            <div class="subtext-text subtext-text-title">
-                                <span
-                                    class="subtext-text-span"
-                                    data-aos="fade-up"
-                                    data-aos-duration="1000"
-                                    data-aos-once="true"
-                                    >ABOUT MOVEMENT</span
-                                >
-                                <h3
-                                    class="subtext-text-display"
-                                    data-aos="zoom-in-up"
-                                    data-aos-duration="1000"
-                                    data-aos-once="true"
-                                >
-                                    Everything you need to decorate your room
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="subtext-text grid-4">
+                                Open an Account
+                            </button>
                             <p
                                 class="subtext-text-desc"
                                 data-aos="zoom-in-up"
                                 data-aos-duration="1000"
                                 data-aos-once="true"
                             >
-                                <span>MOVEMENT</span> is a creative agency specialized in interior architecture &
-                                styling to create beautiful spaces.
+                                Plan for big expenses, manage profits, vendors, and more with visibility over your
+                                financial cash flow.
                             </p>
                         </div>
+                        <div class="subtext-text-decoration">
+                            <img src="assets/image/decoration-subtext-control.svg" alt="" />
+                        </div>
                     </div>
+                </div>
+                <div class="control-decoration decoration-left">
+                    <img src="assets/image/decoration-left-control.svg" alt="" class="img" />
+                </div>
+                <div class="control-decoration decoration-right">
+                    <img src="assets/image/decoration-right-control.svg" alt="" class="img" />
                 </div>
             </div>
         </section>
-        <!-- end section about -->
+        <!-- end section control -->
 
-        <!-- about copy code -->
-        <section style="margin-block: 120px">
+        <!-- control copy code -->
+        <section style="margin-top: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-about bg-light-yellow&quot;&gt;
-                &lt;div class=&quot;container container-about&quot;&gt;
-                    &lt;div class=&quot;head-content&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text wrapper&quot;&gt;
-                                &lt;div class=&quot;subtext-text-image&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                    &lt;img src=&quot;assets/image/about-image.png&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+            &lt;section class=&quot;section-control&quot;&gt;
+                &lt;div class=&quot;subtext container-fluid&quot;&gt;
+                    &lt;div class=&quot;subtext-slider-control slider-control&quot;
+                        data-aos=&quot;zoom-out&quot;
+                        data-aos-duration=&quot;1000&quot;
+                        data-aos-once=&quot;true&quot;&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-ticket.svg&quot; alt=&quot;&quot; /&gt;
                                 &lt;/div&gt;
-                                &lt;div class=&quot;subtext-text subtext-text-title&quot;&gt;
-                                    &lt;span class=&quot;subtext-text-span&quot; data-aos=&quot;fade-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;ABOUT MOVEMENT&lt;/span&gt;
-                                    &lt;h3 class=&quot;subtext-text-display&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;Everything you need to decorate your room&lt;/h3&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Netflix Monthly&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;28 Sept 2022 &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;+$15.00&lt;/h5&gt;
                                 &lt;/div&gt;
                             &lt;/div&gt;
-                            &lt;div class=&quot;subtext-text grid-4&quot;&gt;
-                                &lt;p class=&quot;subtext-text-desc&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                    &lt;span&gt;MOVEMENT&lt;/span&gt; is a creative agency specialized in interior architecture &amp; styling to create beautiful spaces.
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-game.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Play Station 5&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;27 Sept 2022 &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;-$450.00&lt;/h5&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-ticket.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Staycation&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;31 Aug 2022&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;-$390.00&lt;/h5&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- --&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-ticket.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Netflix Monthly&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;28 Sept 2022 &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;+$15.00&lt;/h5&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-game.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Play Station 5&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;27 Sept 2022 &lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;-$450.00&lt;/h5&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;slide&quot;&gt;
+                                &lt;div class=&quot;slide-image&quot;&gt;
+                                    &lt;img src=&quot;assets/image/icon-ticket.svg&quot; alt=&quot;&quot; /&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-display&quot;&gt;Staycation&lt;/h5&gt;
+                                    &lt;span class=&quot;slide-text-span&quot;&gt;31 Aug 2022&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;slide-text&quot;&gt;
+                                    &lt;h5 class=&quot;slide-text-desc&quot;&gt;-$390.00&lt;/h5&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;control container&quot;&gt;
+                    &lt;div class=&quot;subtext container&quot;&gt;
+                        &lt;div class=&quot;subtext-text&quot;&gt;
+                            &lt;h2
+                                class=&quot;subtext-text-display&quot;
+                                data-aos=&quot;zoom-in-up&quot;
+                                data-aos-duration=&quot;1000&quot;
+                                data-aos-once=&quot;true&quot;&gt;
+                                Be In Complete Control
+                            &lt;/h2&gt;
+                            &lt;div class=&quot;wrapper&quot;&gt;
+                                &lt;button
+                                    class=&quot;btn btn-link&quot;
+                                    data-aos=&quot;zoom-in-up&quot;
+                                    data-aos-duration=&quot;1000&quot;
+                                    data-aos-once=&quot;true&quot;&gt;
+                                    Open an Account
+                                &lt;/button&gt;
+                                &lt;p
+                                    class=&quot;subtext-text-desc&quot;
+                                    data-aos=&quot;zoom-in-up&quot;
+                                    data-aos-duration=&quot;1000&quot;
+                                    data-aos-once=&quot;true&quot;&gt;
+                                    Plan for big expenses, manage profits, vendors, and more with visibility over your
+                                    financial cash flow.
                                 &lt;/p&gt;
                             &lt;/div&gt;
+                            &lt;div class=&quot;subtext-text-decoration&quot;&gt;
+                                &lt;img src=&quot;assets/image/decoration-subtext-control.svg&quot; alt=&quot;&quot; /&gt;
+                            &lt;/div&gt;
                         &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;control-decoration decoration-left&quot;&gt;
+                        &lt;img src=&quot;assets/image/decoration-left-control.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;control-decoration decoration-right&quot;&gt;
+                        &lt;img src=&quot;assets/image/decoration-right-control.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/section&gt;
@@ -361,695 +741,296 @@
                 </pre>
             </div>
         </section>
-        <!-- about copy code end -->
+        <!-- control copy code end -->
 
-        <!-- section project -->
-        <section class="section-project">
-            <div class="container container-project">
-                <div class="head-content">
-                    <div class="subtext">
-                        <div class="subtext-text grid-3">
-                            <span
-                                class="subtext-text-span"
-                                data-aos="zoom-in-right"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                                >OUR LATEST PROJECT</span
-                            >
-                        </div>
-                        <div class="subtext-text grid-9">
-                            <h2
-                                class="subtext-text-display"
-                                data-aos="zoom-in-left"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                Make your own spaces the most comfortable
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="wrapper-btn">
-                        <button class="btn btn-arrow btn-arrow-previous">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M7.5 19.5L4.5 15.75L1.5 12M1.5 12H22.5M1.5 12L4.5 8.25L7.5 4.5"
-                                    stroke="#152632"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </button>
-                        <button class="btn btn-arrow btn-arrow-next">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M16.5 4.5L19.5 8.25L22.5 12M22.5 12L1.5 12M22.5 12L19.5 15.75L16.5 19.5"
-                                    stroke="#152632"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="body-content">
-                    <div class="subtext-card slider-card-project">
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card">
-                                <img src="assets/image/project-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        Modern kitchen and bar for apartment to look stylish and luxurious.
-                                    </p>
-                                    <button class="btn btn-link">
-                                        See more <img src="assets/image/project-btn-image.svg" alt="" class="img" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section project -->
-
-        <!-- project copy code -->
-        <section style="margin-block: 120px">
-            <div class="container container-pre pre">
-                <pre class="pre-wrapper">
-                    <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-project&quot;&gt;
-                &lt;div class=&quot;container container-project&quot;&gt;
-                    &lt;div class=&quot;head-content&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text grid-3&quot;&gt;
-                                &lt;span class=&quot;subtext-text-span&quot; data-aos=&quot;zoom-in-right&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;OUR LATEST PROJECT&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;subtext-text grid-9&quot;&gt;
-                                &lt;h2 class=&quot;subtext-text-display&quot; data-aos=&quot;zoom-in-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;Make your own spaces the most comfortable&lt;/h2&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;wrapper-btn&quot;&gt;
-                            &lt;button class=&quot;btn btn-arrow btn-arrow-previous&quot;&gt;
-                                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;&gt;
-                                    &lt;path d=&quot;M7.5 19.5L4.5 15.75L1.5 12M1.5 12H22.5M1.5 12L4.5 8.25L7.5 4.5&quot; stroke=&quot;#152632&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
-                                &lt;/svg&gt;
-                            &lt;/button&gt;
-                            &lt;button class=&quot;btn btn-arrow btn-arrow-next&quot;&gt;
-                                &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;&gt;
-                                    &lt;path d=&quot;M16.5 4.5L19.5 8.25L22.5 12M22.5 12L1.5 12M22.5 12L19.5 15.75L16.5 19.5&quot; stroke=&quot;#152632&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
-                                &lt;/svg&gt;
-                            &lt;/button&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;body-content&quot;&gt;
-                        &lt;div class=&quot;subtext-card slider-card-project&quot;&gt;
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            <!--  -->
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            <!--  -->
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;div&gt;
-                                &lt;div class=&quot;card&quot;&gt;
-                                    &lt;img src=&quot;assets/image/project-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;Modern kitchen and bar for apartment to look stylish and luxurious.&lt;/p&gt;
-                                        &lt;button class=&quot;btn btn-link&quot;&gt;See more &lt;img src=&quot;assets/image/project-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;&lt;/button&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/section&gt;
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <!-- project copy code end -->
-
-        <!-- section statistic -->
-        <section class="section-statistic">
-            <div class="container container-statistic">
-                <div class="subtext">
-                    <div class="subtext-text">
-                        <h2 class="subtext-text-display">
-                            <span class="counter">3700</span><span class="text-primary">+</span>
-                        </h2>
-                        <p class="subtext-text-desc">Complete Project</p>
-                    </div>
-                    <div class="subtext-text">
-                        <h2 class="subtext-text-display">
-                            <span class="counter">450</span>K<span class="text-primary">+</span>
-                        </h2>
-                        <p class="subtext-text-desc">Happy Customer</p>
-                    </div>
-                    <div class="subtext-text">
-                        <h2 class="subtext-text-display">
-                            <span class="counter">297</span><span class="text-primary">+</span>
-                        </h2>
-                        <p class="subtext-text-desc">Loyal Employee</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section statistic -->
-
-        <!-- statistic copy code -->
-        <section style="margin-block: 120px">
-            <div class="container container-pre pre">
-                <pre class="pre-wrapper">
-                    <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-statistic&quot;&gt;
-                &lt;div class=&quot;container container-statistic&quot;&gt;
-                    &lt;div class=&quot;subtext&quot;&gt;
-                        &lt;div class=&quot;subtext-text&quot;&gt;
-                            &lt;h2 class=&quot;subtext-text-display&quot;&gt;
-                                &lt;span class=&quot;counter&quot;&gt;3700&lt;/span&gt;&lt;span class=&quot;text-primary&quot;&gt;+&lt;/span&gt;
-                            &lt;/h2&gt;
-                            &lt;p class=&quot;subtext-text-desc&quot;&gt;Complete Project&lt;/p&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;subtext-text&quot;&gt;
-                            &lt;h2 class=&quot;subtext-text-display&quot;&gt;
-                                &lt;span class=&quot;counter&quot;&gt;450&lt;/span&gt;K&lt;span class=&quot;text-primary&quot;&gt;+&lt;/span&gt;
-                            &lt;/h2&gt;
-                            &lt;p class=&quot;subtext-text-desc&quot;&gt;Happy Customer&lt;/p&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;subtext-text&quot;&gt;
-                            &lt;h2 class=&quot;subtext-text-display&quot;&gt;
-                                &lt;span class=&quot;counter&quot;&gt;297&lt;/span&gt;&lt;span class=&quot;text-primary&quot;&gt;+&lt;/span&gt;
-                            &lt;/h2&gt;
-                            &lt;p class=&quot;subtext-text-desc&quot;&gt;Loyal Employee&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/section&gt;
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <!-- statistic copy code end -->
-
-        <!-- section work -->
-        <section class="section-work bg-dark">
-            <div class="container container-work">
-                <div class="head-content grid-6">
-                    <div class="subtext">
-                        <div class="subtext-text">
-                            <span
-                                class="subtext-text-span"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                                >HOW WE WORK</span
-                            >
-                            <h2
-                                class="subtext-text-display"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                We create stylish interior design for
-                                <span><img src="assets/image/work-span-image.svg" alt="" class="img" /></span> your
-                                spaces
-                            </h2>
-                        </div>
-                        <div
-                            class="subtext-list"
-                            data-aos="zoom-in-right"
+        <!-- section pockets -->
+        <section class="section-pocket">
+            <div class="container subtext">
+                <div class="subtext-text">
+                    <span class="subtext-text-span" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true"
+                        >YOUR POCKETS</span
+                    >
+                    <div class="wrapper">
+                        <h2
+                            class="subtext-text-display"
+                            data-aos="zoom-out-up"
                             data-aos-duration="1000"
                             data-aos-once="true"
                         >
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">ARCHITECTURE</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">DESIGN</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">CONCEPT</h5>
-                                </div>
-                            </div>
-                            <div class="subtext-list-item item">
-                                <div class="item-image">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3"
-                                            stroke="white"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <h5 class="item-text-desc">PLANNING</h5>
-                                </div>
+                            Manage Finance in <span class="text-secondary">Multiple </span>
+                            <span class="text-primary">Pockets</span>
+                        </h2>
+                        <p
+                            class="subtext-text-desc"
+                            data-aos="zoom-out-up"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                        >
+                            Delivery through multiple channels, including mobile, tablet and desktop.
+                        </p>
+                    </div>
+                </div>
+                <div class="subtext-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                    <div>
+                        <div class="card">
+                            <span class="card-text-label">PRIMARY</span>
+                            <div class="wrapper">
+                                <h4 class="card-text-display">$16.000</h4>
+                                <span class="card-text-desc">For your daily needs</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="body-content grid-6">
-                    <div class="subtext-card" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-once="true">
+                    <div>
                         <div class="card">
-                            <div class="card-image">
-                                <img src="assets/image/work-card-image.png" alt="" class="img image-item" />
-                                <img src="assets/image/Play.svg" alt="" class="img image-play-btn" />
+                            <span class="card-text-label">BUSINESS</span>
+                            <div class="wrapper">
+                                <h4 class="card-text-display">$110.000</h4>
+                                <span class="card-text-desc">Your business wallet</span>
                             </div>
-                            <p class="card-text-desc">
-                                Collaborate and create something that is unique with our cutting edge tools, skilled
-                                interior designer and special materials.
-                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <span class="card-text-label">INVESTMENT</span>
+                            <div class="wrapper">
+                                <h4 class="card-text-display">$191.670</h4>
+                                <span class="card-text-desc">Calculate investment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <span class="card-text-label">MEDICAL</span>
+                            <div class="wrapper">
+                                <h4 class="card-text-display">$15.530</h4>
+                                <span class="card-text-desc">Funds for your health</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <span class="card-text-label">PRIMARY</span>
+                            <div class="wrapper">
+                                <h4 class="card-text-display">$16.000</h4>
+                                <span class="card-text-desc">For your daily needs</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end section work -->
+        <!-- end section pockets -->
 
-        <!-- work copy code -->
-        <section style="margin-block: 120px">
+        <!-- pockets copy code -->
+        <section style="margin-top: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-work bg-dark&quot;&gt;
-                &lt;div class=&quot;container container-work&quot;&gt;
-                    &lt;div class=&quot;head-content grid-6&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text&quot;&gt;
-                                &lt;span
-                                    class=&quot;subtext-text-span&quot;
-                                    data-aos=&quot;zoom-in-up&quot;
-                                    data-aos-duration=&quot;1000&quot;
-                                    data-aos-once=&quot;true&quot;
-                                    &gt;HOW WE WORK&lt;/span
-                                &gt;
-                                &lt;h2
-                                    class=&quot;subtext-text-display&quot;
-                                    data-aos=&quot;zoom-in-up&quot;
-                                    data-aos-duration=&quot;1000&quot;
-                                    data-aos-once=&quot;true&quot;
-                                &gt;
-                                    We create stylish interior design for
-                                    &lt;span&gt;&lt;img src=&quot;assets/image/work-span-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;&lt;/span&gt; your
-                                    spaces
-                                &lt;/h2&gt;
-                            &lt;/div&gt;
-                            &lt;div
-                                class=&quot;subtext-list&quot;
-                                data-aos=&quot;zoom-in-right&quot;
+            &lt;section class=&quot;section-pocket&quot;&gt;
+                &lt;div class=&quot;container subtext&quot;&gt;
+                    &lt;div class=&quot;subtext-text&quot;&gt;
+                        &lt;span class=&quot;subtext-text-span&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                            YOUR POCKETS
+                        &lt;/span&gt;
+                        &lt;div class=&quot;wrapper&quot;&gt;
+                            &lt;h2
+                                class=&quot;subtext-text-display&quot;
+                                data-aos=&quot;zoom-out-up&quot;
                                 data-aos-duration=&quot;1000&quot;
-                                data-aos-once=&quot;true&quot;
-                            &gt;
-                                &lt;div class=&quot;subtext-list-item item&quot;&gt;
-                                    &lt;div class=&quot;item-image&quot;&gt;
-                                        &lt;svg
-                                            xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                                            width=&quot;16&quot;
-                                            height=&quot;16&quot;
-                                            viewBox=&quot;0 0 16 16&quot;
-                                            fill=&quot;none&quot;
-                                        &gt;
-                                            &lt;path
-                                                d=&quot;M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3&quot;
-                                                stroke=&quot;white&quot;
-                                                stroke-linecap=&quot;round&quot;
-                                                stroke-linejoin=&quot;round&quot;
-                                            /&gt;
-                                        &lt;/svg&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;item-text&quot;&gt;
-                                        &lt;h5 class=&quot;item-text-desc&quot;&gt;ARCHITECTURE&lt;/h5&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;div class=&quot;subtext-list-item item&quot;&gt;
-                                    &lt;div class=&quot;item-image&quot;&gt;
-                                        &lt;svg
-                                            xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                                            width=&quot;16&quot;
-                                            height=&quot;16&quot;
-                                            viewBox=&quot;0 0 16 16&quot;
-                                            fill=&quot;none&quot;
-                                        &gt;
-                                            &lt;path
-                                                d=&quot;M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3&quot;
-                                                stroke=&quot;white&quot;
-                                                stroke-linecap=&quot;round&quot;
-                                                stroke-linejoin=&quot;round&quot;
-                                            /&gt;
-                                        &lt;/svg&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;item-text&quot;&gt;
-                                        &lt;h5 class=&quot;item-text-desc&quot;&gt;DESIGN&lt;/h5&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;div class=&quot;subtext-list-item item&quot;&gt;
-                                    &lt;div class=&quot;item-image&quot;&gt;
-                                        &lt;svg
-                                            xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                                            width=&quot;16&quot;
-                                            height=&quot;16&quot;
-                                            viewBox=&quot;0 0 16 16&quot;
-                                            fill=&quot;none&quot;
-                                        &gt;
-                                            &lt;path
-                                                d=&quot;M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3&quot;
-                                                stroke=&quot;white&quot;
-                                                stroke-linecap=&quot;round&quot;
-                                                stroke-linejoin=&quot;round&quot;
-                                            /&gt;
-                                        &lt;/svg&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;item-text&quot;&gt;
-                                        &lt;h5 class=&quot;item-text-desc&quot;&gt;CONCEPT&lt;/h5&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;div class=&quot;subtext-list-item item&quot;&gt;
-                                    &lt;div class=&quot;item-image&quot;&gt;
-                                        &lt;svg
-                                            xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                                            width=&quot;16&quot;
-                                            height=&quot;16&quot;
-                                            viewBox=&quot;0 0 16 16&quot;
-                                            fill=&quot;none&quot;
-                                        &gt;
-                                            &lt;path
-                                                d=&quot;M11 13L13 10.5L15 8M15 8H1M15 8L13 5.5L11 3&quot;
-                                                stroke=&quot;white&quot;
-                                                stroke-linecap=&quot;round&quot;
-                                                stroke-linejoin=&quot;round&quot;
-                                            /&gt;
-                                        &lt;/svg&gt;
-                                    &lt;/div&gt;
-                                    &lt;div class=&quot;item-text&quot;&gt;
-                                        &lt;h5 class=&quot;item-text-desc&quot;&gt;PLANNING&lt;/h5&gt;
-                                    &lt;/div&gt;
+                                data-aos-once=&quot;true&quot;&gt;
+                                Manage Finance in &lt;span class=&quot;text-secondary&quot;&gt;Multiple &lt;/span&gt;
+                                &lt;span class=&quot;text-primary&quot;&gt;Pockets&lt;/span&gt;
+                            &lt;/h2&gt;
+                            &lt;p
+                                class=&quot;subtext-text-desc&quot;
+                                data-aos=&quot;zoom-out-up&quot;
+                                data-aos-duration=&quot;1000&quot;
+                                data-aos-once=&quot;true&quot;&gt;
+                                Delivery through multiple channels, including mobile, tablet and desktop.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;subtext-card&quot; data-aos=&quot;zoom-in&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;span class=&quot;card-text-label&quot;&gt;PRIMARY&lt;/span&gt;
+                                &lt;div class=&quot;wrapper&quot;&gt;
+                                    &lt;h4 class=&quot;card-text-display&quot;&gt;$16.000&lt;/h4&gt;
+                                    &lt;span class=&quot;card-text-desc&quot;&gt;For your daily needs&lt;/span&gt;
                                 &lt;/div&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;body-content grid-6&quot;&gt;
-                        &lt;div class=&quot;subtext-card&quot; data-aos=&quot;zoom-in-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                        &lt;div&gt;
                             &lt;div class=&quot;card&quot;&gt;
-                                &lt;div class=&quot;card-image&quot;&gt;
-                                    &lt;img src=&quot;assets/image/work-card-image.png&quot; alt=&quot;&quot; class=&quot;img image-item&quot; /&gt;
-                                    &lt;img src=&quot;assets/image/Play.svg&quot; alt=&quot;&quot; class=&quot;img image-play-btn&quot; /&gt;
+                                &lt;span class=&quot;card-text-label&quot;&gt;BUSINESS&lt;/span&gt;
+                                &lt;div class=&quot;wrapper&quot;&gt;
+                                    &lt;h4 class=&quot;card-text-display&quot;&gt;$110.000&lt;/h4&gt;
+                                    &lt;span class=&quot;card-text-desc&quot;&gt;Your business wallet&lt;/span&gt;
                                 &lt;/div&gt;
-                                &lt;p class=&quot;card-text-desc&quot;&gt;
-                                    Collaborate and create something that is unique with our cutting edge tools, skilled
-                                    interior designer and special materials.
-                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;span class=&quot;card-text-label&quot;&gt;INVESTMENT&lt;/span&gt;
+                                &lt;div class=&quot;wrapper&quot;&gt;
+                                    &lt;h4 class=&quot;card-text-display&quot;&gt;$191.670&lt;/h4&gt;
+                                    &lt;span class=&quot;card-text-desc&quot;&gt;Calculate investment&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;span class=&quot;card-text-label&quot;&gt;MEDICAL&lt;/span&gt;
+                                &lt;div class=&quot;wrapper&quot;&gt;
+                                    &lt;h4 class=&quot;card-text-display&quot;&gt;$15.530&lt;/h4&gt;
+                                    &lt;span class=&quot;card-text-desc&quot;&gt;Funds for your health&lt;/span&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;div class=&quot;card&quot;&gt;
+                                &lt;span class=&quot;card-text-label&quot;&gt;PRIMARY&lt;/span&gt;
+                                &lt;div class=&quot;wrapper&quot;&gt;
+                                    &lt;h4 class=&quot;card-text-display&quot;&gt;$16.000&lt;/h4&gt;
+                                    &lt;span class=&quot;card-text-desc&quot;&gt;For your daily needs&lt;/span&gt;
+                                &lt;/div&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/section&gt;
+
                     </code>
                 </pre>
             </div>
         </section>
-        <!-- work copy code end -->
+        <!-- pockets copy code end -->
 
         <!-- section testimonial -->
         <section class="section-testimonial">
-            <div class="container container-testimonial">
-                <div class="head-content grid-3">
-                    <div class="subtext-image" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-once="true">
-                        <img src="assets/image/testimonial-image.svg" alt="" class="img" />
+            <div class="container">
+                <div class="wrapper">
+                    <div class="swiper">
+                        <div class="subtext" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
+                            <p class="subtext-text-desc">What they said?</p>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div
+                            class="subtext slider mySwiper"
+                            data-aos="zoom-out-up"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                        >
+                            <div class="swiper-wrapper">
+                                <div class="slider-item swiper-slide">
+                                    <span class="subtext-text-span">OUR TESTIMONIAL</span>
+                                    <p class="subtext-text-desc">
+                                        We are a strategic partner to our clients. We will help you to ideate, design
+                                        and implement your product from conception to iterative development support,
+                                        always taking the initiative and working proactively.
+                                    </p>
+                                    <div class="subtext-text-profile profile">
+                                        <img src="assets/image/profile-img.png" alt="profile-img" class="img-profile" />
+                                        <p class="profile-name">Cameron Williamson</p>
+                                    </div>
+                                </div>
+                                <div class="slider-item swiper-slide">
+                                    <span class="subtext-text-span">OUR TESTIMONIAL</span>
+                                    <p class="subtext-text-desc">
+                                        We are a strategic partner to our clients. We will help you to ideate, design
+                                        and implement your product from conception to iterative development support,
+                                        always taking the initiative and working proactively.
+                                    </p>
+                                    <div class="subtext-text-profile profile">
+                                        <img src="assets/image/profile-img.png" alt="profile-img" class="img-profile" />
+                                        <p class="profile-name">Cameron Williamson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-arrow">
+                                <img src="assets/image/btn-arrow.svg" alt="" class="ic icon-arrow" />
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="user-active grid-8"
+                        data-aos="zoom-out-up"
+                        data-aos-duration="1000"
+                        data-aos-once="true"
+                    >
+                        <h5 class="total">120K <span class="text-primary">+</span></h5>
+                        <p class="desc-text">Active user in the world</p>
                     </div>
                 </div>
-                <div class="body-content grid-9">
-                    <div class="subtext">
-                        <div class="subtext-text">
-                            <h3
-                                class="subtext-text-display"
-                                data-aos="zoom-in-left"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                The essence of interior design will always be about how people live. It’s about the
-                                realities of what makes for an attractive and meaningful.
-                            </h3>
-                        </div>
-                        <div class="subtext-card">
-                            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
-                                <img src="assets/image/testimonial-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <p class="card-body-desc">
-                                        <span>MOVEMENT</span> is a creative agency specialized in interior architecture
-                                        & styling to create beautiful spaces.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-once="true">
-                                <img src="assets/image/testimonial-card-image.png" alt="" class="img card-image" />
-                                <div class="card-body">
-                                    <span class="card-body-span">
-                                        <div class="line"></div>
-                                        Since 2001
-                                    </span>
-                                    <p class="card-body-display">
-                                        <span class="text-primary">ARCHITECTURE</span> / DESIGN / STYLING / PLANNING /
-                                        CONCEPT / BUILD
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="decoration">
+                    <img src="assets/image/testimonials-decor.svg" alt="" class="img" />
                 </div>
             </div>
         </section>
         <!-- end section testimonial -->
 
         <!-- testimonial copy code -->
-        <section style="margin-block: 120px">
+        <section style="margin-top: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
             &lt;section class=&quot;section-testimonial&quot;&gt;
-                &lt;div class=&quot;container container-testimonial&quot;&gt;
-                    &lt;div class=&quot;head-content grid-3&quot;&gt;
-                        &lt;div class=&quot;subtext-image&quot; data-aos=&quot;zoom-in-right&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                            &lt;img src=&quot;assets/image/testimonial-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;wrapper&quot;&gt;
+                        &lt;div class=&quot;swiper&quot;&gt;
+                            &lt;div class=&quot;subtext&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                                &lt;p class=&quot;subtext-text-desc&quot;&gt;What they said?&lt;/p&gt;
+                                &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div
+                                class=&quot;subtext slider mySwiper&quot;
+                                data-aos=&quot;zoom-out-up&quot;
+                                data-aos-duration=&quot;1000&quot;
+                                data-aos-once=&quot;true&quot;
+                            &gt;
+                                &lt;div class=&quot;swiper-wrapper&quot;&gt;
+                                    &lt;div class=&quot;slider-item swiper-slide&quot;&gt;
+                                        &lt;span class=&quot;subtext-text-span&quot;&gt;OUR TESTIMONIAL&lt;/span&gt;
+                                        &lt;p class=&quot;subtext-text-desc&quot;&gt;
+                                            We are a strategic partner to our clients. We will help you to ideate, design
+                                            and implement your product from conception to iterative development support,
+                                            always taking the initiative and working proactively.
+                                        &lt;/p&gt;
+                                        &lt;div class=&quot;subtext-text-profile profile&quot;&gt;
+                                            &lt;img src=&quot;assets/image/profile-img.png&quot; alt=&quot;profile-img&quot; class=&quot;img-profile&quot; /&gt;
+                                            &lt;p class=&quot;profile-name&quot;&gt;Cameron Williamson&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;slider-item swiper-slide&quot;&gt;
+                                        &lt;span class=&quot;subtext-text-span&quot;&gt;OUR TESTIMONIAL&lt;/span&gt;
+                                        &lt;p class=&quot;subtext-text-desc&quot;&gt;
+                                            We are a strategic partner to our clients. We will help you to ideate, design
+                                            and implement your product from conception to iterative development support,
+                                            always taking the initiative and working proactively.
+                                        &lt;/p&gt;
+                                        &lt;div class=&quot;subtext-text-profile profile&quot;&gt;
+                                            &lt;img src=&quot;assets/image/profile-img.png&quot; alt=&quot;profile-img&quot; class=&quot;img-profile&quot; /&gt;
+                                            &lt;p class=&quot;profile-name&quot;&gt;Cameron Williamson&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;button class=&quot;btn btn-arrow&quot;&gt;
+                                    &lt;img src=&quot;assets/image/btn-arrow.svg&quot; alt=&quot;&quot; class=&quot;ic icon-arrow&quot; /&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div
+                            class=&quot;user-active grid-8&quot;
+                            data-aos=&quot;zoom-out-up&quot;
+                            data-aos-duration=&quot;1000&quot;
+                            data-aos-once=&quot;true&quot;
+                        &gt;
+                            &lt;h5 class=&quot;total&quot;&gt;120K &lt;span class=&quot;text-primary&quot;&gt;+&lt;/span&gt;&lt;/h5&gt;
+                            &lt;p class=&quot;desc-text&quot;&gt;Active user in the world&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div class=&quot;body-content grid-9&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text&quot;&gt;
-                                &lt;h3
-                                    class=&quot;subtext-text-display&quot;
-                                    data-aos=&quot;zoom-in-left&quot;
-                                    data-aos-duration=&quot;1000&quot;
-                                    data-aos-once=&quot;true&quot;&gt;
-                                    The essence of interior design will always be about how people live. It&rsquo;s about the
-                                    realities of what makes for an attractive and meaningful.
-                                &lt;/h3&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;subtext-card&quot;&gt;
-                                &lt;div class=&quot;card&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                    &lt;img src=&quot;assets/image/testimonial-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;p class=&quot;card-body-desc&quot;&gt;
-                                            &lt;span&gt;MOVEMENT&lt;/span&gt; is a creative agency specialized in interior architecture
-                                            &amp; styling to create beautiful spaces.
-                                        &lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                                &lt;div class=&quot;card&quot; data-aos=&quot;zoom-in-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                    &lt;img src=&quot;assets/image/testimonial-card-image.png&quot; alt=&quot;&quot; class=&quot;img card-image&quot; /&gt;
-                                    &lt;div class=&quot;card-body&quot;&gt;
-                                        &lt;span class=&quot;card-body-span&quot;&gt;
-                                            &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
-                                            Since 2001
-                                        &lt;/span&gt;
-                                        &lt;p class=&quot;card-body-display&quot;&gt;
-                                            &lt;span class=&quot;text-primary&quot;&gt;ARCHITECTURE&lt;/span&gt; / DESIGN / STYLING / PLANNING /
-                                            CONCEPT / BUILD
-                                        &lt;/p&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+                    &lt;div class=&quot;decoration&quot;&gt;
+                        &lt;img src=&quot;assets/image/testimonials-decor.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/section&gt;
@@ -1059,177 +1040,53 @@
         </section>
         <!-- testimonial copy code end -->
 
-        <!-- section choose -->
-        <section class="section-choose">
-            <div class="container container-choose">
-                <div class="head-content">
-                    <div class="subtext">
-                        <div class="subtext-text grid-9">
-                            <span
-                                class="subtext-text-span"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                                >WHY CHOOSE US</span
-                            >
-                            <h2
-                                class="subtext-text-display"
-                                data-aos="zoom-in-up"
-                                data-aos-duration="1000"
-                                data-aos-once="true"
-                            >
-                                We provide the best design for your own
-                            </h2>
-                        </div>
-                        <div
-                            class="subtext-text grid-3"
-                            data-aos="zoom-in-left"
+        <!-- section banner -->
+        <section class="section-banner">
+            <div class="container">
+                <div class="subtext">
+                    <div class="subtext-text">
+                        <h2
+                            class="subtext-text-display"
+                            data-aos="zoom-out-up"
                             data-aos-duration="1000"
                             data-aos-once="true"
                         >
-                            <div class="subtext-text-profile">
-                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
-                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
-                                <img src="assets/image/choose-profile-image.png" alt="" class="img" />
-                            </div>
-                            <p class="subtext-text-desc">
-                                <span>Reviews</span> from our client is very important for us. We listen all your
-                                feedbacks!
-                            </p>
-                        </div>
+                            Join over 400,000 accounts
+                        </h2>
                     </div>
-                </div>
-                <div class="body-content">
-                    <div class="subtext-item">
-                        <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
-                            <div class="item-text">
-                                <h3 class="item-text-display">Creative and unique custom design</h3>
-                                <p class="item-text-desc">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                            </div>
-                            <button class="btn btn-icon">
-                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
-                            </button>
-                        </div>
-                        <div class="item" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
-                            <div class="item-text">
-                                <h3 class="item-text-display">Special materials for make good interior</h3>
-                                <p class="item-text-desc">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                            </div>
-                            <button class="btn btn-icon btn-icon-reverse">
-                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
-                            </button>
-                        </div>
-                        <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                            <img src="assets/image/choose-item-image.png" alt="" class="img item-image" />
-                            <div class="item-text">
-                                <h3 class="item-text-display">Friendly prices with 24/7 services</h3>
-                                <p class="item-text-desc">
-                                    Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                    mi tempus imperdiet.
-                                </p>
-                            </div>
-                            <button class="btn btn-icon">
-                                <img src="assets/image/choose-btn-image.svg" alt="" class="img" />
-                            </button>
+                    <div class="subtext-input" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-once="true">
+                        <input type="text" placeholder="Enter your email address" />
+                        <div>
+                            <button class="btn btn-primary">Open an Account</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end section choose -->
+        <!-- end section banner -->
 
-        <!-- choose copy code -->
-        <section style="margin-block: 120px">
+        <!-- banner copy code -->
+        <section style="margin-top: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-choose&quot;&gt;
-                &lt;div class=&quot;container container-choose&quot;&gt;
-                    &lt;div class=&quot;head-content&quot;&gt;
-                        &lt;div class=&quot;subtext&quot;&gt;
-                            &lt;div class=&quot;subtext-text grid-9&quot;&gt;
-                                &lt;span
-                                    class=&quot;subtext-text-span&quot;
-                                    data-aos=&quot;zoom-in-up&quot;
-                                    data-aos-duration=&quot;1000&quot;
-                                    data-aos-once=&quot;true&quot;
-                                    &gt;WHY CHOOSE US&lt;/span
-                                &gt;
-                                &lt;h2
-                                    class=&quot;subtext-text-display&quot;
-                                    data-aos=&quot;zoom-in-up&quot;
-                                    data-aos-duration=&quot;1000&quot;
-                                    data-aos-once=&quot;true&quot;
-                                    &gt;
-                                    We provide the best design for your own
-                                &lt;/h2&gt;
-                            &lt;/div&gt;
-                            &lt;div
-                                class=&quot;subtext-text grid-3&quot;
-                                data-aos=&quot;zoom-in-left&quot;
+            &lt;section class=&quot;section-banner&quot;&gt;
+                &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;subtext&quot;&gt;
+                        &lt;div class=&quot;subtext-text&quot;&gt;
+                            &lt;h2
+                                class=&quot;subtext-text-display&quot;
+                                data-aos=&quot;zoom-out-up&quot;
                                 data-aos-duration=&quot;1000&quot;
                                 data-aos-once=&quot;true&quot;
-                                &gt;
-                                &lt;div class=&quot;subtext-text-profile&quot;&gt;
-                                    &lt;img src=&quot;assets/image/choose-profile-image.png&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                    &lt;img src=&quot;assets/image/choose-profile-image.png&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                    &lt;img src=&quot;assets/image/choose-profile-image.png&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                &lt;/div&gt;
-                                &lt;p class=&quot;subtext-text-desc&quot;&gt;
-                                    &lt;span&gt;Reviews&lt;/span&gt; from our client is very important for us. We listen all your
-                                    feedbacks!
-                                &lt;/p&gt;
-                            &lt;/div&gt;
+                            &gt;
+                                Join over 400,000 accounts
+                            &lt;/h2&gt;
                         &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;body-content&quot;&gt;
-                        &lt;div class=&quot;subtext-item&quot;&gt;
-                            &lt;div class=&quot;item&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;img src=&quot;assets/image/choose-item-image.png&quot; alt=&quot;&quot; class=&quot;img item-image&quot; /&gt;
-                                &lt;div class=&quot;item-text&quot;&gt;
-                                    &lt;h3 class=&quot;item-text-display&quot;&gt;Creative and unique custom design&lt;/h3&gt;
-                                    &lt;p class=&quot;item-text-desc&quot;&gt;
-                                        Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                        mi tempus imperdiet.
-                                    &lt;/p&gt;
-                                &lt;/div&gt;
-                                &lt;button class=&quot;btn btn-icon&quot;&gt;
-                                    &lt;img src=&quot;assets/image/choose-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                &lt;/button&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;item&quot; data-aos=&quot;fade-right&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;img src=&quot;assets/image/choose-item-image.png&quot; alt=&quot;&quot; class=&quot;img item-image&quot; /&gt;
-                                &lt;div class=&quot;item-text&quot;&gt;
-                                    &lt;h3 class=&quot;item-text-display&quot;&gt;Special materials for make good interior&lt;/h3&gt;
-                                    &lt;p class=&quot;item-text-desc&quot;&gt;
-                                        Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                        mi tempus imperdiet.
-                                    &lt;/p&gt;
-                                &lt;/div&gt;
-                                &lt;button class=&quot;btn btn-icon btn-icon-reverse&quot;&gt;
-                                    &lt;img src=&quot;assets/image/choose-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                &lt;/button&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;item&quot; data-aos=&quot;fade-left&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
-                                &lt;img src=&quot;assets/image/choose-item-image.png&quot; alt=&quot;&quot; class=&quot;img item-image&quot; /&gt;
-                                &lt;div class=&quot;item-text&quot;&gt;
-                                    &lt;h3 class=&quot;item-text-display&quot;&gt;Friendly prices with 24/7 services&lt;/h3&gt;
-                                    &lt;p class=&quot;item-text-desc&quot;&gt;
-                                        Venenatis cras sed felis eget velit. Nulla facilisi nullam vehicula ipsum ultrices
-                                        mi tempus imperdiet.
-                                    &lt;/p&gt;
-                                &lt;/div&gt;
-                                &lt;button class=&quot;btn btn-icon&quot;&gt;
-                                    &lt;img src=&quot;assets/image/choose-btn-image.svg&quot; alt=&quot;&quot; class=&quot;img&quot; /&gt;
-                                &lt;/button&gt;
+                        &lt;div class=&quot;subtext-input&quot; data-aos=&quot;zoom-out-up&quot; data-aos-duration=&quot;1000&quot; data-aos-once=&quot;true&quot;&gt;
+                            &lt;input type=&quot;text&quot; placeholder=&quot;Enter your email address&quot; /&gt;
+                            &lt;div&gt;
+                                &lt;button class=&quot;btn btn-primary&quot;&gt;Open an Account&lt;/button&gt;
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
@@ -1239,152 +1096,50 @@
                 </pre>
             </div>
         </section>
-        <!-- choose copy code end -->
-
-        <!-- section touch -->
-        <section class="section-touch bg-light-yellow">
-            <div class="container-fluid container-fluid-touch">
-                <div class="slider-touch">
-                    <div>
-                        <div class="item">
-                            <img src="assets/image/touch-slider-image.svg" alt="" class="img item-image" />
-                        </div>
-                    </div>
-                    <div>
-                        <div class="item">
-                            <h1 class="item-text-display">Get In <span>Touch</span></h1>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="item">
-                            <h1 class="item-text-display text-white">Get In <span>Touch</span></h1>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div>
-                        <div class="item">
-                            <img src="assets/image/touch-slider-image.svg" alt="" class="img item-image" />
-                        </div>
-                    </div>
-                    <div>
-                        <div class="item">
-                            <h1 class="item-text-display">Get In <span>Touch</span></h1>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="item">
-                            <h1 class="item-text-display text-white">Get In <span>Touch</span></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section touch -->
-
-        <!-- touch copy code -->
-        <section style="margin-block: 120px">
-            <div class="container container-pre pre">
-                <pre class="pre-wrapper">
-                    <code class="pre-wrapper-code">
-            &lt;section class=&quot;section-touch bg-light-yellow&quot;&gt;
-                &lt;div class=&quot;container-fluid container-fluid-touch&quot;&gt;
-                    &lt;div class=&quot;slider-touch&quot;&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;img src=&quot;assets/image/touch-slider-image.svg&quot; alt=&quot;&quot; class=&quot;img item-image&quot; /&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;h1 class=&quot;item-text-display&quot;&gt;Get In &lt;span&gt;Touch&lt;/span&gt;&lt;/h1&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;h1 class=&quot;item-text-display text-white&quot;&gt;Get In &lt;span&gt;Touch&lt;/span&gt;&lt;/h1&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;!--  --&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;img src=&quot;assets/image/touch-slider-image.svg&quot; alt=&quot;&quot; class=&quot;img item-image&quot; /&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;h1 class=&quot;item-text-display&quot;&gt;Get In &lt;span&gt;Touch&lt;/span&gt;&lt;/h1&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div&gt;
-                            &lt;div class=&quot;item&quot;&gt;
-                                &lt;h1 class=&quot;item-text-display text-white&quot;&gt;Get In &lt;span&gt;Touch&lt;/span&gt;&lt;/h1&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/section&gt;
-                    </code>
-                </pre>
-            </div>
-        </section>
-        <!-- touch copy code end -->
+        <!-- banner copy code end -->
 
         <!-- footer -->
-        <footer class="footer bg-dark">
+        <footer class="footer-wrapper" style="margin-top: 120px;">
             <div class="container container-footer">
-                <div class="content">
-                    <div class="content-text">
-                        <h4>
-                            <a class="content-text-display">Movement<span class="text-primary">.</span></a>
-                        </h4>
+                <div class="footer">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="assets/image/Logo.svg" alt="logo" class="img" />
+                        </a>
                     </div>
-                    <div class="content-text">
-                        <a href="#" class="content-text-subtext">Info@movement.com</a>
-                        <a href="#" class="content-text-desc">3891 Ranchview Dr. Richardson, California 62639</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="content-menus-socialmedia">
-                        <a href="#" class="nav-link">Instagram</a>
-                        <a href="#" class="nav-link">Twitter</a>
-                        <a href="#" class="nav-link">Tiktok</a>
-                        <a href="#" class="nav-link">Youtube</a>
-                    </div>
-                    <div class="content-mark">
-                        <p class="content-mark-text">© 2022 Movement. All rights reserved.</p>
+                    <div class="footer-nav nav">
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Careers</a>
+                        <a href="#" class="nav-link">Term</a>
+                        <a href="#" class="nav-link nav-link-brand">We’re Hiring!</a>
+                        <a href="#" class="nav-link">Pricing</a>
+                        <a href="#" class="nav-link">Privacy & Policy</a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- end footer -->
+        <!-- footer end -->
 
         <!-- footer copy code -->
         <section style="margin-block: 120px">
             <div class="container container-pre pre">
                 <pre class="pre-wrapper">
                     <code class="pre-wrapper-code">
-            &lt;footer class=&quot;footer bg-dark&quot;&gt;
+            &lt;footer class=&quot;footer-wrapper&quot;&gt;
                 &lt;div class=&quot;container container-footer&quot;&gt;
-                    &lt;div class=&quot;content&quot;&gt;
-                        &lt;div class=&quot;content-text&quot;&gt;
-                            &lt;h4&gt;
-                                &lt;a class=&quot;content-text-display&quot;&gt;Movement&lt;span class=&quot;text-primary&quot;&gt;.&lt;/span&gt;&lt;/a&gt;
-                            &lt;/h4&gt;
+                    &lt;div class=&quot;footer&quot;&gt;
+                        &lt;div class=&quot;footer-logo&quot;&gt;
+                            &lt;a href=&quot;#&quot;&gt;
+                                &lt;img src=&quot;assets/image/Logo.svg&quot; alt=&quot;logo&quot; class=&quot;img&quot; /&gt;
+                            &lt;/a&gt;
                         &lt;/div&gt;
-                        &lt;div class=&quot;content-text&quot;&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;content-text-subtext&quot;&gt;Info@movement.com&lt;/a&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;content-text-desc&quot;&gt;3891 Ranchview Dr. Richardson, California 62639&lt;/a&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;content&quot;&gt;
-                        &lt;div class=&quot;content-menus-socialmedia&quot;&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Instagram&lt;/a&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Twitter&lt;/a&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Tiktok&lt;/a&gt;
-                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Youtube&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;content-mark&quot;&gt;
-                            &lt;p class=&quot;content-mark-text&quot;&gt;&amp;copy; 2022 Movement. All rights reserved.&lt;/p&gt;
+                        &lt;div class=&quot;footer-nav nav&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;About&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Careers&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Term&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link nav-link-brand&quot;&gt;We&rsquo;re Hiring!&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Pricing&lt;/a&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Privacy &amp; Policy&lt;/a&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -1395,20 +1150,14 @@
         </section>
         <!-- footer copy code end -->
 
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- Slick -->
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-        <!-- CounterUp -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-            integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-
-        <script src="./assets/js/main.js"></script>
+        <!-- js -->
+        <script src="assets/js/main.js"></script>
         <!-- AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

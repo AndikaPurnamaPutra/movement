@@ -10,19 +10,16 @@ $grid-columns: 12;
 // .grid-6 for 50%
 // .grid-12 for 100%
 [class^="grid-"] {
-    @include responsive(md) {
-        width: 100% !important;
+    @include respondsive(md) {
+        width: 100%;
     }
 }
 
 .bg-dark {
-    background-color: $secondary;
+    background-color: #1d1d20;
 }
-.bg-light-yellow {
-    background-color: $primary;
-}
-.bg-light-white {
-    background-color: $primary;
+.bg-dark-light {
+    background-color: $dark-gray;
 }
 
 // layout for display
@@ -31,22 +28,43 @@ section {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 120px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        &-fluid {
+            padding: unset !important;
+        }
+        @include respondsive(xl) {
+            padding: 0 60px;
+            // flex-direction: column;
+        }
+        @include respondsive(md) {
+            padding: 0 20px;
+            flex-direction: column;
+        }
+    }
 }
 
 .container {
     max-width: 1440px;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 120px;
     display: flex;
     flex-direction: row;
     margin: auto;
     &-fluid {
+        // @extend .container;
         padding: unset !important;
     }
-    @include responsive(xl) {
-        padding: 0 40px;
+    @include respondsive(xl) {
+        padding: 0 60px;
+        // flex-direction: column;
     }
-    @include responsive(md) {
+    @include respondsive(md) {
         padding: 0 20px;
         flex-direction: column;
     }

@@ -20,66 +20,125 @@
 //     text-rendering: optimizeLegibility;
 // }
 
+// @font-face {
+//     font-family: "Italian Plate No1 Expanded";
+//     src: url("/assets/fonts/GraphikLCG-Light.eot");
+//     src: local("Graphik LCG Light"), local("GraphikLCG-Light"),
+//         url("/assets/fonts/GraphikLCG-Light.eot?#iefix") format("embedded-opentype"),
+//         url("/assets/fonts/GraphikLCG-Light.woff2") format("woff2"),
+//         url("/assets/fonts/GraphikLCG-Light.woff") format("woff"),
+//         url("/assets/fonts/GraphikLCG-Light.ttf") format("truetype");
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Italian Plate No1 Expanded";
+//     src: url("/assets/fonts/GraphikLCG-Regular.eot");
+//     src: local("Graphik LCG Regular"), local("GraphikLCG-Regular"),
+//         url("/assets/fonts/GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"),
+//         url("/assets/fonts/GraphikLCG-Regular.woff2") format("woff2"),
+//         url("/assets/fonts/GraphikLCG-Regular.woff") format("woff"),
+//         url("/assets/fonts/GraphikLCG-Regular.ttf") format("truetype");
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Italian Plate No1 Expanded";
+//     src: url("/assets/fonts/GraphikLCG-Medium.eot");
+//     src: local("Graphik LCG Medium"), local("GraphikLCG-Medium"),
+//         url("/assets/fonts/GraphikLCG-Medium.eot?#iefix") format("embedded-opentype"),
+//         url("/assets/fonts/GraphikLCG-Medium.woff2") format("woff2"),
+//         url("/assets/fonts/GraphikLCG-Medium.woff") format("woff"),
+//         url("/assets/fonts/GraphikLCG-Medium.ttf") format("truetype");
+//     font-weight: 500;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: "Eudoxus Sans";
+    src: url("/assets/fonts/eudoxussans-bold-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Eudoxus Sans";
+    src: url("/assets/fonts/eudoxussans-medium-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Eudoxus Sans";
+    src: url("/assets/fonts/eudoxussans-regular-webfont.woff2") format("woff2"),
+        url("/assets/fonts/eudoxussans-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
 // Font Family
 
 // $fontFamilyInter: "Inter", sans-serif;
 // $fontFamilyGilroy: "Gilroy", sans-serif;
-// $fontFamilies: (
-//     font-sans:
-//         'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-//     font-serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
-//     font-mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
-//     font-inter: '"Inter", sans-serif',
-//     font-gilroy: '"Gilroy", sans-serif',
-// ) !default;
+$fontFamilies: (
+    font-sans:
+        'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    font-serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif',
+    font-mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+    font-inter: '"Inter", sans-serif',
+    font-gilroy: '"Gilroy", sans-serif',
+) !default;
 
-$font-display: 'Spectral', serif;
-$font-body: 'Rubik', sans-serif;
+$font-display: "Eudoxus Sans";
+$font-body: "Eudoxus Sans";
 
 // Font Size
 $base: 16px;
-$lh-heading: 110%;
-$lh-desc: 150%;
-$h1: 188px; 
-$h2: 96px; 
-$h3: 64px;
-$h4: 32px; 
-$h5: 24px; 
-$p-xl: 32px; 
-$p-lg: 24px; 
-$p-md: 20px;
-$p: 16px; 
+$lh-heading: 120%;
+$lh-desc: 160%;
+$h1: 90px; // 131px
+$h2: 75px; // 96px
+$h3: 64px; // 72px
+$h4: 40px; // 32px
+$h5: 32px; // 20px
+$p-lg: 24px; // 16px
+$p-md: 20px; // 16px
+$p: 16px; // 16px
 $p-sm: 14px;
+// $p-md: 1.25em; // 20px
 
 // Heading
 h1 {
-    font-family: $font-body;
+    font-family: $font-display;
     font-size: $h1;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $lh-heading;
 }
 h2 {
-    font-family: $font-body;
+    font-family: $font-display;
     font-size: $h2;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $lh-heading;
 }
 h3 {
-    font-family: $font-body;
+    font-family: $font-display;
     font-size: $h3;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $lh-heading;
 }
 h4 {
-    font-family: $font-body;
+    font-family: $font-display;
     font-size: $h4;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $lh-heading;
 }
 h5 {
-    font-family: $font-body;
+    font-family: $font-display;
     font-size: $h5;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $lh-heading;
 }
 
@@ -89,14 +148,27 @@ p {
     line-height: $lh-desc;
     font-weight: 400;
 
-    @include responsive(md) {
+    @include respondsive(md) {
         font-size: 1.125em;
     }
+}
+
+// Description
+.desc {
+    font-family: $font-body;
+    font-size: $p;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+// Title
+.title-small {
+    color: #ffffff;
 }
 
 body {
     font-family: $font-body;
     font-size: $base;
-    // color: #ffffff;
-    // background-color: $bg-color;
+    color: #ffffff;
+    background-color: $bg-color;
 }
