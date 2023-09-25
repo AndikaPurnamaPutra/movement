@@ -41,23 +41,23 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    border: solid 2px $secondary;
+    border: solid 2px $white;
     padding: 8px 20px;
     border-radius: 20px;
     color: $secondary;
     background-color: transparent;
     cursor: pointer;
     &:hover {
-        background-color: $secondary;
+        background-color: $white;
     }
     a {
-        color: $secondary;
+        color: $white;
         &:hover {
-            color: $white;
+            color: $secondary;
         }
     }
 }
 
 .source-code:hover > a {
-    color: $white;
+    color: $secondary;
 }
